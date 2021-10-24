@@ -1,0 +1,28 @@
+---
+templateKey: project-post
+title: Smartwatches in elderly care
+subTitle: A design intervention approach
+course: Thesis
+creators: Marianne Bansell
+year: 2018.2
+yearLevel: 'Third'
+tags:
+  - wearable
+  - codesign
+  - healthcare
+image: /images/2018/bansell-1.jpg
+---
+
+This thesis project is exploring future smartwatch use within elderly care. The user-centered designing phase uses a design intervention approach, where design and research happen simultaneously.
+
+The research question is: _"How can a smartwatch be used within the elderly care, based on the existing TES mobile phone app, and how can these interactions be designed as smartwatch features?"._ The results are four iteratively explored design opportunities, presented as design propositions with concept sketches, and two prototypes.
+
+The main participants in the field studies and workshops are end-users, caregivers within the elderly home care and an elderly care center. The outcome shows they are positive towards an imagined future containing smartwatches as a work tool. They see advantages with the wearable and glanceable technology, like freed hands, less to carry and simpler interactions in comparison to a smart phone.
+
+The study also shows positive effects of using interaction design for a company’s design process, and exploration of new technology.
+
+![Codesign session](/images/2018/bansell-2.jpg 'Codesign session with healthcare professionals')
+
+![Caregivers acting out watch placements](/images/2018/bansell-15.jpg 'Caregivers acting out watch placements')
+
+![Alarm prototype workflow](/images/2018/bansell-3.jpg 'Alarm prototype workflow')

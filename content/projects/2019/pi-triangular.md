@@ -1,0 +1,19 @@
+---
+templateKey: project-post
+title: Triangular
+course: Playful Interaction
+year: 2019
+creators: 'Kristina Arnold, Barith Ball, Line Göst, Pedro Henrique Marinho de Lima, Alison Rebecca Thomas'
+yearLevel: 'Second'
+tags:
+  - play
+  - ubicomp
+  - mobile
+image: /images/2019/pi-triangulate-0.jpg
+---
+
+A location-based game, where the purpose is to 'triangulate' other players, and try to avoid triangulation themselves by moving around the city.
+
+<MauVideo id="0_yzhp7976" />
+
+
