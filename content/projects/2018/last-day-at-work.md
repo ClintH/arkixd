@@ -8,7 +8,7 @@ yearLevel: 'Second'
 tags:
   - embodiment
   - play
-image: /images/2018/last-day-at-work.jpg
+image: images/last-day-at-work.jpg
 ---
 
 _Last Day at Work_ demands physical activity; players must engage various 'machines' and keep up with demands from their in-game boss.

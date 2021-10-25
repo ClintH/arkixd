@@ -10,7 +10,7 @@ tags:
   - machine learning
   - tangible
   - education
-image: /images/2020/tei-study-buddy-0.jpg
+image: images/tei-study-buddy-0.jpg
 ---
 
 <MauVideo id="0_8zd6wms6" />
@@ -22,7 +22,7 @@ Study Buddy is a study companion for your desk introducing a new way of tackling
 It works by simply activating the device and the AI persona will initiate a conversation with the user. The conversational agent is made possible by a development kit from Furhat Robotics which offers industry-leading social and conversational abilities. At first start up the AI will ask a series of questions to get to know the user and after that, it has enough data and is ready to work together with the student. 
 
 
-![](/images/2020/tei-study-buddy-1.jpg)
+![](images/tei-study-buddy-1.jpg)
 
 
 Study Buddy grows over time as your companion. The more Study Buddy is used, the more it will grow and learn together with the student by learning the user’s study pattern and optimal study time. The buddy will provide value in guiding the student to have a higher level of motivation and take efficient breaks.

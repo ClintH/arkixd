@@ -11,7 +11,7 @@ contributions:
 tags:
   - sustainability
   - codesign
-image: /images/2018/muftic-4-5.jpg
+image: images/muftic-4-5.jpg
 ---
 
 Over-consumption is one of the reasons why our natural resources are running out faster than ever. However, the word overconsumption can be interpreted in different ways. Thus, it the core meaning is, the excessive consumption of redundant belongings. The purpose of this thesis is to research how people consume today, and what can be done to reduce those needless purchases. It will specifically focus on clothes since that is one of the things that not only affects the environment but it can be ethically immoral for the people who manufacture the clothes.
@@ -20,7 +20,7 @@ Through research and findings, a prototype will be created in order to study if 
 
 <ImageSet>
 
-![Sustainability information shown when shopping](/images/2018/muftic-4-17.jpg 'Sustainability information shown when shopping')
-![Third user test](/images/2018/muftic-4-21.jpg 'Third user test')
+![Sustainability information shown when shopping](images/muftic-4-17.jpg 'Sustainability information shown when shopping')
+![Third user test](images/muftic-4-21.jpg 'Third user test')
 
 </ImageSet>

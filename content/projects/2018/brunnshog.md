@@ -13,7 +13,7 @@ tags:
   - tangible
   - kids
   - mixed reality
-image: /images/2018/brunnshog-1.jpg
+image: images/brunnshog-1.jpg
 ---
 
 In collaboration with Lund municipality, the students of the first year _Digital Prototyping_ course investigated the opportunity for digital technologies in relation to the [Brunnshög development](https://www.lund.se/brunnshog/). Eventually, the development might support living and work for 40,000 people, especially in relation to the high-tech [European Spallation Source](https://europeanspallationsource.se/) and [MAX IV](https://www.maxiv.lu.se/) scientific research centres.
@@ -31,20 +31,12 @@ We assume they care about the environment at some level. We wanted to create cur
 
 We interviewed people who have moved from afar to understand the experience of moving and wanting to connect to a new community.
 
-![](/images/2018/brunnshog-grow-1.jpg 'When you sign the housing contract, you are sent the Growing Kit pack.')
+![](images/brunnshog-grow-1.jpg 'When you sign the housing contract, you are sent the Growing Kit pack.')
 
-<figure>
-<video controls src="https://api.kaltura.nordu.net/p/326/sp/0/playManifest/entryId/0_dd95j8t0/format/url/flavorParamId/0/video.mp4"></video>
-<figcaption>
-Your plant's digital avatar reflects the care you give it
-</figcaption>
-</figure>
+<MauVideo id="0_dd95j8t0" title="Your plant's digital avatar reflects the care you give it" />
 
-<figure>
-<video controls src="https://api.kaltura.nordu.net/p/326/sp/0/playManifest/entryId/0_6x5yqrbf/format/url/flavorParamId/0/video.mp4"></video>
-<figcaption>
-The care you give the plant nourishes a digital representation, and you can see other current and future residents plants too - and perhaps be curious about who is looking after them
-</figcaption></figure>
+<MauVideo id="0_6x5yqrbf" title="The care you give the plant nourishes a digital representation, and you can see other current and future residents plants too - and perhaps be curious about who is looking after them" />
+
 </div>
 
 <div className="narrow section">
@@ -54,9 +46,8 @@ The care you give the plant nourishes a digital representation, and you can see 
 
 Getting kids to move around in the area physically can make them feel more at home, and ease the disruption of moving to a new suburb. Kids are less concerned with things that lie years ahead, they're focused on the here and now. By proposing open-ended challenges, with no "right" or "wrong" or "undo", we can support a playful atmosphere, where spontaneity and accidents are encouraged. If we can make the participants document and share the experience, this material will both serve as a memory for them, and an entry point for others.
 
-<figure>
-<video controls src="https://api.kaltura.nordu.net/p/326/sp/0/playManifest/entryId/0_igot6ff5/format/url/flavorParamId/0/video.mp4"></video>
-</figure>
+<MauVideo id="0_igot6ff5" />
+
 </div>
 
 <div className="narrow section">
@@ -68,8 +59,7 @@ Through our research we found citizens of Lund were generally critical to the de
 
 Our concept locates this information at the site of disruption as well as the site of future benefit
 
-<figure><video controls src="https://api.kaltura.nordu.net/p/326/sp/0/playManifest/entryId/0_oer5ugs4/format/url/flavorParamId/0/video.mp4"></video>
-</figure>
+<MauVideo id="0_oer5ugs4" />
 
 The display is triggered by user proximity, and allows the user to take away information from the situated display.
 
@@ -84,8 +74,8 @@ The concept is a ride-sharing app that addresses concerns about rising car traff
 
 We investigated sharing practices of the existing neighbouring community of 'Djingis Khan'. Inspired by the social sharing practices we observered there, we attempted to frame ride-sharing as a mundane way of establishing community and considering the environment.
 
-<figure><video controls src="https://api.kaltura.nordu.net/p/326/sp/0/playManifest/entryId/0_852mdvjf/format/url/flavorParamId/0/video.mp4"></video>
-</figure>
+<MauVideo id="0_852mdvjf" />
+
 </div>
 
 <div className="narrow section">
@@ -97,8 +87,7 @@ We designed for the people of Lund who were curious about developments in Brunns
 
 We spent a considerable time investigating how to interact with the experience, how to draw people into it, and how they might understand the interaction.
 
-<figure><video controls src="https://api.kaltura.nordu.net/p/326/sp/0/playManifest/entryId/0_z0kehlnu/format/url/flavorParamId/0/video.mp4"></video>
-</figure>
+<MauVideo id="0_z0kehlnu" />
 
 </div>
 
@@ -111,7 +100,6 @@ Our concept was a personalised self-guided tour of the construction site. This m
 
 We developed a functional prototype to explore the user experience of an augmented tour guide.
 
-<figure><video controls src="https://api.kaltura.nordu.net/p/326/sp/0/playManifest/entryId/0_wqkt0a2p/format/url/flavorParamId/0/video.mp4"></video>
-</figure>
+<MauVideo id="0_wqkt0a2p" />
 
 </div>

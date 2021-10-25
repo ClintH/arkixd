@@ -9,7 +9,7 @@ tags:
   - play
   - ubicomp
   - mobile
-image: /images/2019/pi-triangulate-0.jpg
+image: images/pi-triangulate-0.jpg
 ---
 
 A location-based game, where the purpose is to 'triangulate' other players, and try to avoid triangulation themselves by moving around the city.

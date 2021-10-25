@@ -8,7 +8,7 @@ yearLevel: 'Second'
 tags:
   - interactivity
   - typography
-image: /images/2018/ix-nuance.jpg
+image: images/ix-nuance.jpg
 ---
 
 Type is everywhere in user interfaces but meaning is usually carried in the words themselves, or to a lesser extent, using colour to signal error or unavailability. If we accept that type is a necessary part of interfaces, could we use it to be more expressive?
@@ -29,8 +29,8 @@ These sketches use type to indicate that an element can be swiped from left to r
 
 <ImageSet>
 
-![](/images/2018/ix-nuance-7-1.gif)
-![](/images/2018/ix-nuance-7-2.gif)
+![](images/ix-nuance-7-1.gif)
+![](images/ix-nuance-7-2.gif)
 
 </ImageSet>
 
@@ -43,8 +43,8 @@ These sketches use type to indicate that an element can be swiped from left to r
 
 These sketches show type being modulated by physical objects. Using simple computer vision, the sketches respond to movement by brightly coloured objects.
 
-<Video path="2018/ix-nuance-1-1.webm" />
-<Video path="2018/ix-nuance-1-2.webm" />
+<Video path="2018/images/ix-nuance-1-1.webm" />
+<Video path="2018/images/ix-nuance-1-2.webm" />
 
 </div>
 
@@ -57,7 +57,7 @@ Experiments in type reacting to music.
 
 <ImageSet>
 
-![](/images/2018/ix-nuance-2-1.gif)
+![](images/ix-nuance-2-1.gif)
 
 </ImageSet>
 
@@ -72,7 +72,7 @@ Exploring feedback of temporal events. In this case, suggesting whether one shou
 
 <ImageSet>
 
-![](/images/2018/ix-nuance-3-1.gif)
+![](images/ix-nuance-3-1.gif)
 
 </ImageSet>
 
@@ -87,7 +87,7 @@ An expressive typewriter embodies the characteristics of typing in the text it l
 
 <ImageSet>
 
-![](/images/2018/ix-nuance-4-1.gif)
+![](images/ix-nuance-4-1.gif)
 
 </ImageSet>
 
@@ -100,7 +100,7 @@ An expressive typewriter embodies the characteristics of typing in the text it l
 
 Text is arranged and subtly modulated according to distance and direction of landmarks creating a dynamic typographical map.
 
-<Video path="2018/ix-nuance-5-1.webm" />
+<Video path="2018/images/ix-nuance-5-1.webm" />
 
 </div>
 
@@ -113,8 +113,8 @@ Two sketches here demonstrate some of the explorations of time. The first shows 
 
 <ImageSet>
 
-![](/images/2018/ix-nuance-6-1.gif)
-![](/images/2018/ix-nuance-6-2.gif)
+![](images/ix-nuance-6-1.gif)
+![](images/ix-nuance-6-2.gif)
 
 </ImageSet>
 

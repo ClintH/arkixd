@@ -11,7 +11,7 @@ tags:
   - sustainability
   - speculative
   - society
-image: /images/2019/speculative-1.jpg
+image: images/speculative-1.jpg
 ---
 
 In a four-week project, students in the first year _Digital Prototyping_ course engaged with the [UN Sustainability Goals](https://sustainabledevelopment.un.org/sdgs) and notions of speculative design, discursive design and design fiction.
@@ -29,7 +29,7 @@ Students were asked to avoid:
 # Greta: A little sound leads to great action
 ## Aziza Bahadiddinova, Andrei Băjeu, Mounika Damera, Kim Sundnér, Simon Ulvsand
 
-![Greta's physical form](/images/2019/speculative-2.jpg 'Greta\'s physical form')
+![Greta's physical form](images/speculative-2.jpg 'Greta\'s physical form')
 
 _Greta_ proposes a shoulder-mounted audio shroud which gives constant audio feedback on the sustainability impact of products around you. Reflecting that sustainability is multi-dimensional and individuals care about different factors, an app allows the user to change a filter. For example, distinguishing products by how far away they were produced, their total carbon footprint and so on. 
 

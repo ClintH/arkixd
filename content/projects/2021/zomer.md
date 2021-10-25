@@ -10,14 +10,14 @@ tags:
   - ambient
   - interactivity
   - ubicomp
-image: /images/2021/zomer-0.jpg
+image: images/zomer-0.jpg
 ---
 
 How is the experience of using a proactive smart personal assistant and/or interactive robot shaped through the means and frequency of feedback?
 
 <MauVideo id="0_nrm4qbyd" />
 
-![Overview of the setup](/images/2021/zomer-1.jpg)
+![Overview of the setup](images/zomer-1.jpg)
 
 Five principles for shaping proactive interaction
 
@@ -32,8 +32,8 @@ material, and the human-artefact relationship.
 
 <ImageSet>
 
-![](/images/2021/zomer-2.jpg)
-![](/images/2021/zomer-3.jpg)
-![](/images/2021/zomer-4.jpg)
+![](/images/zomer-2.jpg)
+![](/images/zomer-3.jpg)
+![](/images/zomer-4.jpg)
 
 </ImageSet>

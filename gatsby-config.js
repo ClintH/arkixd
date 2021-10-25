@@ -30,13 +30,6 @@ module.exports = {
         path: `${__dirname}/content/projects`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `uploads`,
-    //     path: `${__dirname}/static/uploads`,
-    //   },
-    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

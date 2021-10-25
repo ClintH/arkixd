@@ -8,11 +8,11 @@ yearLevel: 'Second'
 tags:
   - play
   - animals
-image: /images/2020/pi-cat-2.jpg
+image: images/pi-cat-2.jpg
 ---
 
 A toy for cats. The lure can be controlled with a joystick, or automatically in response to the cat.
 
 <MauVideo id="0_7bybv973" />
 
-![Joystick controller](/images/2020/pi-cat-1.jpg 'Joystick controller')
+![Joystick controller](images/pi-cat-1.jpg 'Joystick controller')

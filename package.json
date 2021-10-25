@@ -1,5 +1,5 @@
 {
-  "name": "arkixd2",
+  "name": "arkixd",
   "private": true,
   "description": "Arkixd",
   "version": "0.1.0",
@@ -47,6 +47,7 @@
   },
   "scripts": {
     "deploy": "netlify deploy --dir=public",
+    "publish": "netlify deploy --dir=public --prod",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",

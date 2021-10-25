@@ -1,11 +1,11 @@
-import * as React from "react"
-import {graphql} from "gatsby"
+import * as React from "react";
+import {graphql} from "gatsby";
 import ProjectThumb from '../components/ProjectThumb';
-import Layout from "../components/Layout"
+import Layout from "../components/Layout";
 
 const IndexPage = ({data, location}) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMdx.nodes
+  const siteTitle = data.site.siteMetadata?.title || `Title`;
+  const posts = data.allMdx.nodes;
 
   if (posts.length === 0) {
     return (
@@ -14,7 +14,7 @@ const IndexPage = ({data, location}) => {
           No projects?
         </p>
       </Layout>
-    )
+    );
   }
 
   return (
@@ -25,14 +25,14 @@ const IndexPage = ({data, location}) => {
             <div className="thumbGridItem" key={post.fields.slug}>
               <ProjectThumb value={post} />
             </div>
-          )
+          );
         })}
       </div>
     </Layout>
-  )
+  );
 }
 
-export default IndexPage
+export default IndexPage;
 
 export const projectThumbFragment = graphql`
 fragment ProjectThumbFragment on Mdx {
@@ -62,8 +62,6 @@ fragment ProjectThumbFragment on Mdx {
 }
 `;
 
-//transformOptions: { fit: COVER, duotone: { highlight: "#d93f5c", shadow: "#400d16", opacity: 90 } }
-//allMarkdownRemark
 /*
 light: #feb8c5
 dark: #e4022d
@@ -85,30 +83,4 @@ query {
     }
   }
 }
-`
-
-/*
- excerpt
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-        subTitle
-        year
-        course
-        creators
-        image {
-          childImageSharp {
-            gatsbyImageData(
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-              transformOptions: {
-                fit: COVER,
-                duotone: { highlight: "#feb8c5", shadow: "#e4022d", opacity: 10 }
-              }
-             )
-          }
-        }
-      }
-*/
+`;

@@ -9,7 +9,7 @@ tags:
   - embodiment
   - play
   - kids
-image: /images/2018/playful-room.jpg
+image: images/playful-room.jpg
 ---
 
 _Playful Room_ is designed to inspire kids for free imaginative play.

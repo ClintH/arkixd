@@ -7,7 +7,7 @@ creators: 'Emelie Björk, Josefine Hansson, Ellen Mårtensson, Robin Schritter, 
 yearLevel: 'Second'
 tags:
   - play
-image: /images/2019/pi-lab-0.jpg
+image: images/pi-lab-0.jpg
 ---
 
 “Welcome to the National Institute of Science. Before you get to work remember to put on your lab coats"
@@ -18,7 +18,7 @@ An escape room, set in a science laboratory, consisting of puzzles, hints and a 
 
 <ImageSet>
 
-![](/images/2019/pi-lab-1.jpg)
-![](/images/2019/pi-lab-2.jpg)
+![](images/pi-lab-1.jpg)
+![](images/pi-lab-2.jpg)
 
 </ImageSet>

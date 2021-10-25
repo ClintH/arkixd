@@ -86,7 +86,7 @@ exports.createPages = async ({graphql, actions, reporter}) => {
   // Create project pages
   if (projectNodes.length > 0) {
     projectNodes.forEach((project) => {
-      if (project.fields == null) console.log(project);
+      //if (project.fields == null) console.log(project);
       createPage({
         path: project.fields.slug,
         component: projectTemplate,
@@ -132,14 +132,22 @@ exports.onCreateNode = ({node, actions, getNode}) => {
     })
 
     // Fix pathing for frontmatter images
-    if (node.frontmatter?.image.startsWith('/')) {
+    if (node.frontmatter?.image.startsWith('/images/')) {
       let url = node.frontmatter.image;
-      //console.log('Url: ' + url);
-      node.frontmatter.image = '../../../src' + url;
+      //node.frontmatter.image = `${__dirname}/src${url}`;
+      //url = '/test-img.jpg';
+      //node.frontmatter.image = `../../../src${url}`;
 
+      // ../img.jpg = /content/projects
+      // ../../img.jpg = /content
 
-      //node.frontmatter.image = '../../../static' + url;
-      //console.log(' -> ' + node.frontmatter.image);
+      let lastSlash = url.lastIndexOf('/');
+
+      node.frontmatter.image = 'images' + url.substring(lastSlash);
+      console.log('Url: ' + url + ' -> ' + node.frontmatter.image);
+
+      //node.frontmatter.image = '../../../src' + url;
+
     }
   }
   // else if (node.internal.type === `ImageSharp`) {

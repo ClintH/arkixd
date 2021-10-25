@@ -9,7 +9,7 @@ yearLevel: 'Third'
 tags:
   - education
   - movement
-image: /images/2021/aljundi-0.jpg
+image: images/aljundi-0.jpg
 ---
 
 
@@ -19,18 +19,18 @@ Interaction design methods are used to craft constructivist learning kits that a
 
 A central sensor module can be attached to a variety of different _attachables_ that permit different kinds of movement to be explored:
 
-![Attachables](/images/2021/aljundi-attachables.jpg)
+![Attachables](images/aljundi-attachables.jpg)
 
 
 Different principles of math and physics can be toyed with.
 
 <ImageSet>
 
-![Circular](/images/2021/aljundi-circular.gif)
-![Circular](/images/2021/aljundi-circular2.gif)
-![Linear](/images/2021/aljundi-linear.gif)
-![Rotation](/images/2021/aljundi-rotation.gif)
-![Oscillation](/images/2021/aljundi-oscillating.gif)
+![Circular](images/aljundi-circular.gif)
+![Circular](images/aljundi-circular2.gif)
+![Linear](images/aljundi-linear.gif)
+![Rotation](images/aljundi-rotation.gif)
+![Oscillation](images/aljundi-oscillating.gif)
 
 </ImageSet>
 

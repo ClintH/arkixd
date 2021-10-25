@@ -7,11 +7,11 @@ creators: 'Benjamin Dannegård, Theo Nordahl, Hella Reischmann, Lucas Stenberg, 
 yearLevel: 'Second'
 tags:
   - play
-image: /images/2019/pi-mountain-0.jpg
+image: images/pi-mountain-0.jpg
 ---
 
 
-![](/images/2019/pi-mountain-3.jpg)
+![](images/pi-mountain-3.jpg)
 
 Set in Yukon territory in 1896, _Call of Mystery Mountain_ is a digitally-enhanced board game, with elements of trading, exploration, collaboration and rivalry.
 
@@ -20,13 +20,13 @@ The objective of the game is to be the first explorer to reach the peak of the m
 <MauVideo id="0_kv47qx3g" />
 
 
-![](/images/2019/pi-mountain-2.jpg)
+![](images/pi-mountain-2.jpg)
 
 Items are used to deal with the different encounters. And if you don't have the necessary items, you can trade with other players. Or, you will have to face the consequences. Whether it be a bear attack that makes you skip a turn  or a bandit stealing an item. In order to win, players need to continually adapt to the environment and the encounters they face. While preparing for the greater challenges on the mountain ahead. Trading and formation of alliances are good strategies for getting ahead.
 
-![](/images/2019/pi-mountain-1.jpg)
+![](images/pi-mountain-1.jpg)
 
 With the digital elements of the game, in addition to the very physical map we were hoping to increase the sense of immersion during the gameplay. 
 
 
-![](/images/2019/pi-mountain-4.jpg)
+![](images/pi-mountain-4.jpg)

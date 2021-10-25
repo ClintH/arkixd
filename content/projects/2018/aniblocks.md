@@ -10,7 +10,7 @@ tags:
   - play
   - kids
   - audio
-image: /images/2018/aniblocks.jpg
+image: images/aniblocks.jpg
 ---
 
 Aniblocks are stackable, sound-responsive toys that invite open-ended play.

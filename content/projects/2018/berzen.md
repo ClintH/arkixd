@@ -8,7 +8,7 @@ yearLevel: 'Third'
 tags:
   - mixed reality
   - museum
-image: /images/2018/berzen-1.jpg
+image: images/berzen-1.jpg
 ---
 
 How could the use of augmented reality be used in a museum to increase the learning aspect of the visit. This project investigates how augmented reality could look like if it would be used in a science museum with animals. The prototypes are developed for a rainforest exhibition with animals running free around the visitor. The research find different types use for augmented reality and develops high en prototypes that is tested in the exhibition. The prototypes, I developed three different prototype for this project. One that is based inside the exhibition with image targets hanging in different places, one brochure inspired prototype where the visitors get a handbook with information about the animals and images triggers augmented reality models. And the last one a more interactive where the visitor is in control of the model.

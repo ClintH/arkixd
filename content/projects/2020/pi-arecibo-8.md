@@ -7,12 +7,12 @@ creators: 'Liam Aljundi, Kornélia Papp, Simon Ulvsand, Michael Waldorff'
 yearLevel: 'Second'
 tags:
   - play
-image: /images/2020/pi-arecibo-0.jpg
+image: images/pi-arecibo-0.jpg
 ---
 
 A text-based, interactive fiction. Combines an adventure narrative with arcade-like musical puzzle mechanic.
 
 <MauVideo id="0_awxga392" />
 
-![](/images/2020/pi-arecibo-1.jpg)
+![](images/pi-arecibo-1.jpg)
 

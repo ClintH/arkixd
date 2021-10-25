@@ -7,7 +7,7 @@ year: 2019
 yearLevel: 'Third'
 tags:
   - nature
-image: /images/2019/hultman-0.jpg
+image: images/hultman-0.jpg
 ---
 
 Spending time in nature will improve your physical and psychological health,
@@ -28,33 +28,22 @@ context.
 
 <ImageSet>
 
-![Analysis](/images/2019/hultman-1.jpg 'Analysis')
-![Ideation session with other designers](/images/2019/hultman-2.jpg 'Ideation session with other designers')
+![Analysis](images/hultman-1.jpg 'Analysis')
+![Ideation session with other designers](images/hultman-2.jpg 'Ideation session with other designers')
 
 </ImageSet>
 
-The digital forest bathing guide aims to promote well-being by introducing a
-relaxed and undemanding "non-activity" in a restorative nature setting. The
-narrated instructions in the guide were heavily inspired by forest bathing, but
-in a more accessible and local manner. The purpose of the guide is to
-introduce new ways of experiencing nature for young urban dwellers, and it’s
-only positive if the user learns the techniques and experiences nature without
-any guidance.
-
-The guide was in the form of an smartphone app that enables users to
-discover and get to new nature areas, listen to the guide and also disconnect
-the obtrusive side of technology. The downloaded, local form of an app,
-relates to the idea of a personal guide that you can trust on.
+The digital forest bathing guide aims to promote well-being by introducing a relaxed and undemanding "non-activity" in a restorative nature setting. The narrated instructions in the guide were heavily inspired by forest bathing, but in a more accessible and local manner. The purpose of the guide is to introduce new ways of experiencing nature for young urban dwellers, and it’s only positive if the user learns the techniques and experiences nature without any guidance. The guide was in the form of an smartphone app that enables users to discover and get to new nature areas, listen to the guide and also disconnect the obtrusive side of technology. The downloaded, local form of an app, relates to the idea of a personal guide that you can trust on.
 
 <ImageSet>
 
-![Key elements of the concept](/images/2019/hultman-3.png 'Key elements of the concept')
-![](/images/2019/hultman-4a.png)
-![](/images/2019/hultman-4b.png)
-![](/images/2019/hultman-4c.png)
+![Key elements of the concept](images/hultman-3.png 'Key elements of the concept')
+![](images/hultman-4a.png)
+![](images/hultman-4b.png)
+![](images/hultman-4c.png)
 
 </ImageSet>
 
 After prototyping a custom wearable for delivering the audio guide part of the experience (left), off-the-shelf Bose Soundwear speakers were chosen (right).
 
-![Audio guide speakers](/images/2019/hultman-0.jpg 'Audio guide speakers')
+![Audio guide speakers](images/hultman-0.jpg 'Audio guide speakers')

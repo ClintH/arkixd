@@ -8,7 +8,7 @@ yearLevel: 'Second'
 tags:
   - play
   - animals
-image: /images/2019/pi-stitch-0.jpg
+image: images/pi-stitch-0.jpg
 ---
 
 This project explores how a playful artefact might initiate interactions, and how it might express 'aliveness'. 
@@ -19,11 +19,11 @@ Exploring and manufacturing materials
 
 <ImageSet>
 
-![](/images/2019/pi-stitch-1.jpg)
-![](/images/2019/pi-stitch-2.jpg)
-![](/images/2019/pi-stitch-3.jpg)
-![](/images/2019/pi-stitch-4.jpg)
-![](/images/2019/pi-stitch-5.jpg)
+![](images/pi-stitch-1.jpg)
+![](images/pi-stitch-2.jpg)
+![](images/pi-stitch-3.jpg)
+![](images/pi-stitch-4.jpg)
+![](images/pi-stitch-5.jpg)
 
 </ImageSet>
 

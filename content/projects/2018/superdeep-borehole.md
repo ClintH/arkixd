@@ -9,7 +9,7 @@ tags:
   - embodiment
   - play
   - audio
-image: /images/2018/superdeep-borehole-1.jpg
+image: images/superdeep-borehole-1.jpg
 ---
 
 Played in darkness, _Superdeep Borehole_ is an audio-based game.
@@ -20,4 +20,4 @@ To progress, the player must tap a tempo demanded by the level. A custom control
 
 <MauVideo id="0_y6169vyl" />
 
-![](/images/2018/superdeep-borehole-1.jpg)
+![](images/superdeep-borehole-1.jpg)

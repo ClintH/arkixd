@@ -7,9 +7,9 @@ year: 2018.2
 yearLevel: 'Third'
 tags:
   - usability
-image: /images/2018/nilsson-8.jpg
+image: images/nilsson-8.jpg
 ---
 
 This thesis investigates the knowledge around the field of eye tracking within e-commerce, and specifically CDON. Eyetracking is a powerful tool within usability testing and it makes us as designers see what the user is actually looking at on the screen. This paper will present the design process and through usability testing result in how to gather and later on analyse data to benefit e-commerce. The study contains research around the methods of eyetracking and usability testing for e-commerce within the field of interaction design that results in a developed user experience method, specialized for e-commerce. The final outcome is an method called the 2-competitor method that interaction designers can use to compete the website that they work on to other websites and find valuable information such as design issues or improvements. The method informs competing sites to be used as a tool to improve design.
 
-![Heat map in action](/images/2018/nilsson-8.jpg 'Heat map in action')
+![Heat map in action](images/nilsson-8.jpg 'Heat map in action')

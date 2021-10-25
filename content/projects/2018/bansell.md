@@ -10,7 +10,7 @@ tags:
   - wearable
   - codesign
   - healthcare
-image: /images/2018/bansell-1.jpg
+image: images/bansell-1.jpg
 ---
 
 This thesis project is exploring future smartwatch use within elderly care. The user-centered designing phase uses a design intervention approach, where design and research happen simultaneously.
@@ -21,8 +21,10 @@ The main participants in the field studies and workshops are end-users, caregive
 
 The study also shows positive effects of using interaction design for a company’s design process, and exploration of new technology.
 
-![Codesign session](/images/2018/bansell-2.jpg 'Codesign session with healthcare professionals')
+<ImageSet>
 
-![Caregivers acting out watch placements](/images/2018/bansell-15.jpg 'Caregivers acting out watch placements')
+![Codesign session](images/bansell-2.jpg 'Codesign session with healthcare professionals')
+![Caregivers acting out watch placements](images/bansell-15.jpg 'Caregivers acting out watch placements')
+![Alarm prototype workflow](images/bansell-3.jpg 'Alarm prototype workflow')
 
-![Alarm prototype workflow](/images/2018/bansell-3.jpg 'Alarm prototype workflow')
+</ImageSet>

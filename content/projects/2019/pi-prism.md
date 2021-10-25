@@ -7,10 +7,10 @@ creators: 'Anouk Govers, Kim Jankowski, Ye-Ji Kim, Duo-Wei Yang'
 yearLevel: 'Second'
 tags:
   - play
-image: /images/2019/pi-prism-0.jpg
+image: images/pi-prism-0.jpg
 ---
 
-![](/images/2019/pi-prism-4.jpg)
+![](images/pi-prism-4.jpg)
 
 An interactive toy that simulates visual experience of an enclosed space using light and mirrors.
 
@@ -20,8 +20,8 @@ Players glimpse a hidden psychedelic world through the periscope of a small scre
 
 <ImageSet>
 
-![](/images/2019/pi-prism-3.jpg)
-![](/images/2019/pi-prism-1.jpg)
+![](images/pi-prism-3.jpg)
+![](images/pi-prism-1.jpg)
 
 </ImageSet>
 

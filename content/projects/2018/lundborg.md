@@ -11,7 +11,7 @@ tags:
   - food
   - agriculture
   - service design
-image: /images/2018/lundborg-2.jpg
+image: images/lundborg-2.jpg
 ---
 
 Promoting trading of locally produced food is one way to challenge the more conventional way of producing food while contributing to a more sustainable consumption. Through empirical research and design practice closely related to its users, this study has explored the motivational aspects behind trading within the platform and concept of REKO-ring Malmö. An analysis of the existing service in relation to its producers and consumers has been made to formulate problems related to how the platform works today. The study results in a design proposal of a new digital platform that shows improvement in meeting the needs and expectations of the consumers found during the empirical research.
@@ -20,8 +20,8 @@ Promoting trading of locally produced food is one way to challenge the more conv
 
 <ImageSet>
 
-![Filling an order](/images/2018/lundborg-1.jpg 'Filling an order')
-![Identified problems](/images/2018/lundborg-2.png 'Identified problems')
-![Iteration of prototype 3](/images/2018/lundborg-29.png 'Iteration of prototype 3')
+![Filling an order](images/lundborg-1.jpg 'Filling an order')
+![Identified problems](images/lundborg-2.png 'Identified problems')
+![Iteration of prototype 3](images/lundborg-29.png 'Iteration of prototype 3')
 
 </ImageSet>

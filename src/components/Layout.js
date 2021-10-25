@@ -13,11 +13,6 @@ const Layout = ({location, title, children}) => {
   const isRootPath = location.pathname === rootPath;
   let header;
   if (isRootPath) {
-    // header = (
-    //   <h1 className="main-heading">
-    //     <Link to="/">main {title}</Link>
-    //   </h1>
-    // )
     header = (
       <div className="title blendedLinks">
         <span className="linkHome">Arkixd.</span> Works from the <a href="about">interaction design bachelor programme</a> at Malmö University.
@@ -45,7 +40,7 @@ const Layout = ({location, title, children}) => {
       </main>
       <footer className="globalFooter blendedLinks">
         <p>
-          <a className="fauxButton" href="#top">&uarr;</a>
+          <a href="#top">&uarr;</a>
         </p>
         <p>
           <a className="linkHome" href="/">Arkixd</a>. <a href="/projects/">projects</a>, <a href="/about">about</a>, <a href="/collaborate">collaborate</a>.

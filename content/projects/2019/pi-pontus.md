@@ -8,7 +8,7 @@ yearLevel: 'Second'
 tags:
   - play
   - typography
-image: /images/2019/pi-pontus-0.jpg
+image: images/pi-pontus-0.jpg
 ---
 
 Learning typography through gaming.
@@ -19,9 +19,9 @@ Players are taken through different eras of typography, and asked to target elem
 
 <ImageSet>
 
-![](/images/2019/pi-pontus-2.jpg)
-![](/images/2019/pi-pontus-1.jpg)
-![](/images/2019/pi-pontus-3.jpg)
+![](images/pi-pontus-2.jpg)
+![](images/pi-pontus-1.jpg)
+![](images/pi-pontus-3.jpg)
 
 </ImageSet>
 

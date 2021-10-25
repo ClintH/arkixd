@@ -6,7 +6,7 @@ subTitle: 'Selected projects'
 year: 2020.2
 creators: ''
 yearLevel: 'First'
-image: /images/2020/studio20-deltreppo-0.jpg
+image: images/studio20-deltreppo-0.jpg
 ---
 
 Our first year students in Interaction Design present the outcomes of a short individual design project on a self-chosen topic within one of three categories:
@@ -27,7 +27,7 @@ The word "seamless" is often heard describing an experience of an interactive ar
 [Try the mock-up](https://xd.adobe.com/view/4c394878-71b3-466f-7489-aae35e3e6e36-3a08/)
 
 
-![](/images/2020/studio20-isaksson-0.png)
+![](images/studio20-isaksson-0.png)
 </div>
 
 <div className="narrow section">
@@ -37,7 +37,7 @@ The word "seamless" is often heard describing an experience of an interactive ar
 
 This project takes a closer look into how movements can be seen as material within interaction design forming tangible outputs. It contains inspirational bits which are created to expose three themes: 'Space and depth', 'Complex vs non-complex movements' and 'The language of movements'. The aim is to invite stakeholders to see space as a resource to be exploited in future design work, to get more familiar with what it means to predict and control movements and in general get more used to approach the material 'movements' as a container of a broad spectrum with design opportunities which is yet to be further discovered.
 
-![](/images/2020/studio20-pitkanen-0.jpg)
+![](images/studio20-pitkanen-0.jpg)
 </div>
 
 <div className="narrow section">
@@ -47,7 +47,7 @@ This project takes a closer look into how movements can be seen as material with
 
 Design without empathy is quite inconceivable, just like trying to catch fish in a deep-sea with a spoon. In traditional design methods, designers immerse themselves in the user tests. But what happens when the user has more liberty to be creative and reflective during the user test, whilst being miles away from the intrusive grasp of the designer? Does this affect the empathic knowledge gained by the designer?
 
-![](/images/2020/studio20-boateng-0.jpg)
+![](images/studio20-boateng-0.jpg)
 
 </div>
 
@@ -58,7 +58,7 @@ Design without empathy is quite inconceivable, just like trying to catch fish in
 
 The present research regarding aesthetics of interaction have primarily focused on interactions based on bodily movement. After conducting a literature review of aesthetics of interacting with smart home devices through voice control it was obvious that there is a need for conducting experiments with aesthetics in verbal communication. In this study I did various experiments tweaking and manipulating the way in which we communicate verbally as well as the act of listening. For example, "How would it feel to talk to my smart assistant in a therapeutic way?".
 
-![](/images/2020/studio20-deltreppo-0.jpg)
+![](images/studio20-deltreppo-0.jpg)
 
 </div>
 
@@ -69,7 +69,7 @@ The present research regarding aesthetics of interaction have primarily focused 
 
 Understanding how we can use ML as a design material to create interactive experiences can be tricky, so I explored different interactive modalities with ML before narrowing it down to gestures. Through three samples of ML with gestures, we unpack and get a look into understanding ML as a material in compound with a modality. Further, the samples show and communicate what otherwise can be hard to grasp in only descriptive terms. I hope these samples inspire and further encourages exploration of ML in playful ways.
 
-![](/images/2020/studio20-franzen-0.jpg)
+![](images/studio20-franzen-0.jpg)
 </div>
 
 <div className="narrow section">
@@ -79,7 +79,7 @@ Understanding how we can use ML as a design material to create interactive exper
 
 In order to sketch transitions in user interface design, this project proposes using stop motion as a method. Through practical experiences and the use of participants the method has been evaluated and the benefits and limitations are brought up. Furthermore a general guide of using the method has been develop in order to aid beginners.
 
-![](/images/2020/studio20-lundin-0.jpg)
+![](images/studio20-lundin-0.jpg)
 </div>
 
 <div className="narrow section">
@@ -89,7 +89,7 @@ In order to sketch transitions in user interface design, this project proposes u
 
 I'm exploring light as a material. How to control the light in a 3D space and steering the eye's attention in different ways. With the help of simple 3D spaces and prototypes built out of cardboard boxes I'm playing with how light is shown and how it affects the surroundings. With the lights properties of being able to change and re-shape quickly it’s a great recourse that I believe is underestimated. 
 
-![](/images/2020/studio20-mikkelsensjoholm-0.png)
+![](images/studio20-mikkelsensjoholm-0.png)
 </div>
 
 <div className="narrow section">
@@ -110,5 +110,5 @@ Working with sound in interaction design to create an elevated experience with a
 
 NFC has over the last decade found its way into most smartphones and is often used for contactless payment or pairing of Bluetooth devices. These use cases however only illustrate one out of three modes that NFC can operate in. To better understand the properties and limitations of NFC and especially the peer-to-peer mode inspirational bits are presented. Through two different inspirational bits limitations like manual user interference and properties like the range of the signal are highlighted and made into tangible experiences.
 
-![](/images/2020/studio20-siebeneicher-0.jpg)
+![](images/studio20-siebeneicher-0.jpg)
 </div>

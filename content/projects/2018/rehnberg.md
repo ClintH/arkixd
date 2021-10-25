@@ -9,10 +9,10 @@ yearLevel: 'Third'
 tags:
   - mixed reality
   - design practice
-image: /images/2018/rehnberg-12.jpg
+image: images/rehnberg-12.jpg
 ---
 
 This thesis explores the use of virtual reality as a prototyping tool for design practitioners to utilize when designing artifacts situated in physical places. Methods used in the study are qualitative and derive from the field of interaction design. The topic is explored through literature review on the attributes of virtual reality and sense of place, presented in the theory chapter, and is connected to the empirical research throughout the design process chapter. The theories presented strongly indicate that places affect human behavior, making them a substantial part of the user experience when interacting with designed artifacts in specific locations, which is echoed though the target audience who voice the need to prototype design concepts in the context of place. The study culminates in two kinds of virtual reality prototypes, dubbed contextual prototypes, that are suggested to have different use cases depending on what the purpose for prototyping is.
 
 
-![The day/night-prototype](/images/2018/rehnberg-12.jpg 'The day/night-prototype')
+![The day/night-prototype](images/rehnberg-12.jpg 'The day/night-prototype')

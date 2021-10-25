@@ -10,9 +10,9 @@ tags:
   - wearable
   - animals
   - conversational
-image: /images/2018/tei-dogsa-0.jpg
+image: images/tei-dogsa-0.jpg
 ---
 
 In investigating future domestic IoT scenarios, we arrived at the concept of a dog-borne voice-based smart assistant. The  harness prototype provided features such as weather, timer and wiki access. We then studied the outcome through observation and qualitative interviews with dog owners. Our research eventually led us to go beyond anthropocentrism. Through exploration of ethical perspectives and emerging technologies we draw the conclusion that the smart harness should be developed to assist and benefit dogs rather than people.
 
-![](/images/2018/tei-dogsa-0.jpg)
+![](images/tei-dogsa-0.jpg)

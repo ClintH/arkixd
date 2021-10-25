@@ -9,7 +9,7 @@ yearLevel: 'Second'
 tags:
   - tangible
   - education
-image: /images/2020/tei-box-it-0.jpg
+image: images/tei-box-it-0.jpg
 ---
 
 <MauVideo id="0_dx8yuja6" />
@@ -26,4 +26,4 @@ The user can then manipulate and rearrange the cubes in whatever manner he or sh
 
 Who said thinking inside the box was a bad idea? Don’t let that good thought escape. Box It.
 
-![](/images/2020/tei-box-it-1.jpg)
+![](images/tei-box-it-1.jpg)
