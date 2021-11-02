@@ -25,8 +25,8 @@ In the course <em>Interactivity</em>, students purposefully do not create concep
 
 Inspired by the two-handed working of dough, the sketches explored working with two joysticks and how their combined used can manipulate a cursor.
 
-<Video path="2018/images/ix-skill-1-1.webm" />
-<Video path="2018/images/ix-skill-1-2.webm" />
+<Video src="2018/images/ix-skill-1-1.webm" />
+<Video src="2018/images/ix-skill-1-2.webm" />
 
 </div>
 
@@ -58,9 +58,9 @@ By mounting the joystick on the floor and introducing a long rod, moving the joy
 
 Inspired by guitar playing, the sketches explored interaction that involved both hands and arms but each in a distinctive way and relation to the body.
 
-<Video path="2018/images/ix-skill-2-1.webm" />
-<Video path="2018/images/ix-skill-2-2.webm" />
-<Video path="2018/images/ix-skill-2-3.webm" />
+<Video src="2018/images/ix-skill-2-1.webm" />
+<Video src="2018/images/ix-skill-2-2.webm" />
+<Video src="2018/images/ix-skill-2-3.webm" />
 
 </div>
 
@@ -71,11 +71,11 @@ Inspired by guitar playing, the sketches explored interaction that involved both
 
 Shown here is a series of explorations in different kinds of grips that can be designed for.
 
-<Video path="2018/images/ix-skill-3-1.webm" />
-<Video path="2018/images/ix-skill-3-2.webm" />
-<Video path="2018/images/ix-skill-3-3.webm" />
-<Video path="2018/images/ix-skill-3-4.webm" />
-<Video path="2018/images/ix-skill-3-5.webm" />
+<Video src="2018/images/ix-skill-3-1.webm" />
+<Video src="2018/images/ix-skill-3-2.webm" />
+<Video src="2018/images/ix-skill-3-3.webm" />
+<Video src="2018/images/ix-skill-3-4.webm" />
+<Video src="2018/images/ix-skill-3-5.webm" />
 
 </div>
 

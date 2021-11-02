@@ -476,12 +476,13 @@ a:focus {
   background-color: pink;
 }
 
-.imageSet>li {
+.imageSet>li, .imageSet>figure {
   list-style: none;
   margin: var(--spacing-2);
   flex-grow: 1;
   text-align: center;
   min-width: 400px;
+  max-width: 30vw;
 }
 
 .projectBody>p, 
@@ -623,7 +624,7 @@ a.fauxButton:hover {
 
 figure>video {
   width: 100%;
-  max-height: 90vw;
+  max-height: 90vh;
   /* height: 100%;
   max-width: 90vw;
   display: flex;

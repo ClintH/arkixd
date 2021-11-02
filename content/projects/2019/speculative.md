@@ -56,7 +56,7 @@ _Strawmore_ recasts cheap, disposable plastic straws as luxury goods. Straws  bo
 
 Drawing on the face 'fixing' functions in selfie photography and social media, _Fix-a-Fruit_ applies this to an imagined social network for sharing blemish-free fruit.
 
-<Webp title="UI for fixing fruit" path="2019/images/speculative-4.webp" />
+<Webp title="UI for fixing fruit" src="2019/images/speculative-4.webp" />
 
 </div>
 
@@ -67,7 +67,7 @@ Drawing on the face 'fixing' functions in selfie photography and social media, _
 
 Swipe Dream as a critical design project intends to provoke discussions about the importance of donating through organizations with transparent and monitored systems.
 
-<Webp title="Swiping people in need" path="2019/images/speculative-5.webp" />
+<Webp title="Swiping people in need" src="2019/images/speculative-5.webp" />
 
 The project includes an app that enables direct donations to people in need of help based on the user’s personal preferences such as religion, race, sexuality and needs while by-passing administrative costs.
 

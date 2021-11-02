@@ -25,7 +25,7 @@ In the course <em>Interactivity</em>, students purposefully do not create concep
 
 This abstract sketch establishes a limited, structured space around the focal object (in this case, a body of text). Pinching and holding allows objects to be moved within the space, or placed outside.
 
-<Video path="2018/images/ix-space-1-1.webm" />
+<Video src="2018/images/ix-space-1-1.webm" />
 
 </div>
 
@@ -63,6 +63,6 @@ This sketch works with a notion of spaced that is layered with depth. As the reg
 
 This sketch came out of a similar inquiry into working with layered space. In this interaction, pressing the surface reveals stacked panels, and with a continuous movement the user can select what space to enter. 
 
-<Video path="2018/images/ix-space-4-1.webm" />
+<Video src="2018/images/ix-space-4-1.webm" />
 
 </div>

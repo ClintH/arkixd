@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const ImageSet = (props) => {
   //const children = props.children;
@@ -28,7 +28,7 @@ const ImageSet = (props) => {
       } else findImg(n.children.props.children, acculm);
     }
     return acculm;
-  }
+  };
 
   //  console.log(children);
 
@@ -48,10 +48,10 @@ const ImageSet = (props) => {
       {images.map((img, index) => {
         return (
           <li key={index}>{img}</li>
-        )
+        );
       })}
     </section>
-  )
-}
+  );
+};
 
-export default ImageSet
+export default ImageSet;

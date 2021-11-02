@@ -43,8 +43,8 @@ These sketches use type to indicate that an element can be swiped from left to r
 
 These sketches show type being modulated by physical objects. Using simple computer vision, the sketches respond to movement by brightly coloured objects.
 
-<Video path="2018/images/ix-nuance-1-1.webm" />
-<Video path="2018/images/ix-nuance-1-2.webm" />
+<Video src="2018/images/ix-nuance-1-1.webm" />
+<Video src="2018/images/ix-nuance-1-2.webm" />
 
 </div>
 
@@ -100,7 +100,7 @@ An expressive typewriter embodies the characteristics of typing in the text it l
 
 Text is arranged and subtly modulated according to distance and direction of landmarks creating a dynamic typographical map.
 
-<Video path="2018/images/ix-nuance-5-1.webm" />
+<Video src="2018/images/ix-nuance-5-1.webm" />
 
 </div>
 

@@ -1,6 +1,6 @@
 import React from "react";
 import {useStaticQuery, graphql} from "gatsby";
-const Webp = ({path, title, ...props}) => {
+const Webp = ({src, title, ...props}) => {
   const allVideo = useStaticQuery(graphql`
   {
     allFile(filter: { extension: { eq: "webp" } }) {
@@ -14,10 +14,10 @@ const Webp = ({path, title, ...props}) => {
     }
   }
 `).allFile.edges;
-  let node = allVideo.find(n => n.node.relativePath === path);
+  let node = allVideo.find(n => n.node.relativePath === src);
   let url = '';
   if (node == null) {
-    console.log('Warning could not find media: ' + path);
+    console.log('Warning could not find media: ' + src);
   } else {
     url = node.node.publicURL;
   }
