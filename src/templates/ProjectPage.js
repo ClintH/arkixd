@@ -1,10 +1,10 @@
-import * as React from "react"
-import {graphql} from "gatsby"
-import {getImage} from "gatsby-plugin-image"
-import {MDXRenderer} from 'gatsby-plugin-mdx'
+import * as React from "react";
+import {graphql} from "gatsby";
+import {getImage} from "gatsby-plugin-image";
+import {MDXRenderer} from 'gatsby-plugin-mdx';
 // import {BgImage, convertToBgImage} from "gbimage-bridge"
 // import BackgroundImage from 'gatsby-background-image';
-import Layout from "../components/Layout"
+import Layout from "../components/Layout";
 import PlaceholderImage from '../components/PlaceholderImage';
 
 const ProjectPageTemplate = ({children, mdxScope, data, ...props}) => {

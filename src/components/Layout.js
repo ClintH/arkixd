@@ -5,10 +5,12 @@ import Header from './mdxComponents/Header';
 import ImageSet from './mdxComponents/ImageSet';
 import MauVideo from "./mdxComponents/MauVideo";
 import Video from "./mdxComponents/Video";
+import Webp from './mdxComponents/Webp';
+
 import Seo from './Seo';
 
 const Layout = ({location, title, children}) => {
-  const shortcodes = {Header, ImageSet, Video, MauVideo};
+  const shortcodes = {Header, Webp, ImageSet, Video, MauVideo};
   const rootPath = `${__PATH_PREFIX__}/`;
   const isRootPath = location.pathname === rootPath;
   let header;

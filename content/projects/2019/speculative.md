@@ -48,3 +48,58 @@ _Greta_ proposes a shoulder-mounted audio shroud which gives constant audio feed
 _Strawmore_ recasts cheap, disposable plastic straws as luxury goods. Straws  bought for conspicuous consumption and collecting and made of exotic materials. Physical mock-ups were made alongside an online shopping experience.
 
 </div>
+
+<div className="narrow section">
+
+# Fix-A-Fruit
+## Tirsa Ramos-Pedersen, Josefine Lagerstedt, Malin Benson, Victor Frederiksen, Nefeli Alushi
+
+Drawing on the face 'fixing' functions in selfie photography and social media, _Fix-a-Fruit_ applies this to an imagined social network for sharing blemish-free fruit.
+
+<Webp title="UI for fixing fruit" path="2019/images/speculative-4.webp" />
+
+</div>
+
+<div className="narrow section">
+
+# Swipedream
+## Melika Ljutovic, Farbod Hashemian, Bahr Srebrenica, Simon Ståhl
+
+Swipe Dream as a critical design project intends to provoke discussions about the importance of donating through organizations with transparent and monitored systems.
+
+<Webp title="Swiping people in need" path="2019/images/speculative-5.webp" />
+
+The project includes an app that enables direct donations to people in need of help based on the user’s personal preferences such as religion, race, sexuality and needs while by-passing administrative costs.
+
+​Having the possibility to select who to not help makes users question their moral values. The points system and leader board made users doubt intentions of donating, it is about doing good and not about competition.
+
+</div>
+
+<div className="narrow section">
+
+# CoralCooler
+## Richard Soto, Kornélia Papp, Zakiya Pierre, Viviana Pohl, Julija Rukanskaite, Therese Persson
+
+CoralCooler speculates on ice-creams that nourish and colour coral. Each kind of ice-cream is packed with different nuggets that are complete with nutrients and a colouring agent. After enjoying your ice-cream at the beach, simply toss it into the ocean.
+
+![CoralCooler](images/speculative-6.webp 'CoralCooler')
+
+The project comments on the futility of 'fixing' an ecosystem as complex as coral reefs, and the human desire for nature to be managed and conform to visual standards.
+
+![](images/speculative-6a.png)
+
+</div>
+
+<div className="narrow section">
+
+# Pollinationist
+## Jovan Bakic, Lin Johnsson, Mihhail Korot, Klara Törnquist, Martin Wibom, Christoffer Zackheden
+
+![Pollinationist](images/speculative-7.jpg 'Pollinationist')
+
+_Pollinationist: the job of tomorrow_ is a speculative design project created to through provocation raise awareness about UN:s sustainable development goal 13: Climate action. The project is an interpretation on resilience and the ability to adapt to the heat waves Malmö, Sweden been experiencing 2018. If butterflies, bees and birds would come to harm due to this climate change, what could it look like when human tries to replace their work with their own efforts? To further generate knowledge and to raise questions, we have created an app and a prop that are showcased in a video.
+
+
+<MauVideo id="0_a0htqqn4" />
+
+</div>
