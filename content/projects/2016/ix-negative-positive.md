@@ -9,6 +9,7 @@ tags:
   - interactivity
   - embodiment
   - tangible
+image: images/blank-project.jpg
 ---
 
 This two-week exploration in _Interactivity_ was about how to convert what might be thought of as a 'negative' experience into something that is experienced as a positive. Body conductivity was the key material to explore.
