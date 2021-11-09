@@ -4,6 +4,8 @@
 
 Build scripts:
 
+$env:NODE_OPTIONS="--openssl-legacy-provider"
+export NODE_OPTIONS=--openssl-legacy-provider
 
 ```
 // Clean previously built files
