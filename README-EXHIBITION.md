@@ -4,7 +4,7 @@ Each exhibition project is documented in its own Markdown file. This is a plain 
 
 At the top of the file is the _front-matter_. It starts and ends with lines containing `---`. Each line within the front-matter is a key-value pair, separated by `:`.
 
-For example: `course: "studio 1"`, sets the key 'course' to the value 'studio 1'. Numeric values aren't enclosed in inverted commas, and some keys can have several values, using the array syntax `[ ... ]`.
+For example: `title: "Hello"`, sets the key 'title' to the value 'Hello'. Numeric values aren't enclosed in inverted commas, and some keys can have several values, using the array syntax `[ ... ]`.
 
 Here's a basic template to copy and paste as a starting point:
 
