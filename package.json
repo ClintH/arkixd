@@ -1,58 +1,31 @@
 {
   "name": "arkixd",
-  "private": true,
-  "description": "Arkixd",
   "version": "2.0.0",
-  "author": "Clint Heyer",
-  "dependencies": {
-    "@mdx-js/mdx": "^1.6.22",
-    "@mdx-js/react": "^1.6.22",
-    "gatsby": "^4.1.0",
-    "gatsby-plugin-copy-files": "^1.0.4",
-    "gatsby-plugin-image": "^2.1.0",
-    "gatsby-plugin-manifest": "^4.1.0",
-    "gatsby-plugin-mdx": "^3.1.0",
-    "gatsby-plugin-offline": "^5.1.0",
-    "gatsby-plugin-react-helmet": "^5.1.0",
-    "gatsby-plugin-sass": "^5.1.0",
-    "gatsby-plugin-sharp": "^4.1.0",
-    "gatsby-remark-copy-linked-files": "^5.1.0",
-    "gatsby-remark-images": "^6.1.0",
-    "gatsby-remark-responsive-iframe": "^5.1.0",
-    "gatsby-remark-smartypants": "^5.1.0",
-    "gatsby-source-filesystem": "^4.1.0",
-    "gatsby-transformer-remark": "^5.1.0",
-    "gatsby-transformer-sharp": "^4.1.0",
-    "gbimage-bridge": "^0.1.4",
-    "lodash.groupby": "^4.6.0",
-    "lodash.kebabcase": "^4.1.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0",
-    "sass": "^1.43.4",
-    "typeface-merriweather": "1.1.13",
-    "typeface-nunito": "^1.1.13"
+  "private": true,
+  "scripts": {
+    "dev": "astro dev --experimental-integrations",
+    "start": "astro dev",
+    "build": "astro build --experimental-integrations",
+    "preview": "astro preview --experimental-integrations",
+    "deploy": "netlify deploy --dir=dist",
+    "publish": "netlify deploy --dir=dist --prod",
+    "clean": "rimraf node_modules/.cache && rimraf node_modules/.vite",
+    "images": "node optimise-images.js",
+    "images:clean": "rimraf ./public/images"
   },
   "devDependencies": {
-    "netlify-cli": "^6.14.10",
-    "prettier": "2.4.0"
+    "@astrojs/preact": "^0.1.2",
+    "@astrojs/react": "^0.1.1",
+    "astro": "^1.0.0-beta.27",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   },
-  "homepage": "https://arkixd.se",
-  "license": "0BSD",
-  "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/clinth/arkixd.git"
-  },
-  "scripts": {
-    "deploy": "netlify deploy --dir=public",
-    "publish": "netlify deploy --dir=public --prod",
-    "build": "gatsby build",
-    "push": "npm run clean && npm run build && npm run deploy",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+  "dependencies": {
+    "astro-imagetools": "^0.6.3",
+    "globby": "^13.1.1",
+    "mkdirp": "^1.0.4",
+    "preact": "^10.7.1",
+    "rimraf": "^3.0.2",
+    "sharp": "^0.30.4"
   }
 }

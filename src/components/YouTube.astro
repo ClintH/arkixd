@@ -1,0 +1,17 @@
+---
+export interface Props {
+	id: string;
+}
+
+const { id } = Astro.props;
+const src = `https://www.youtube.com/embed/${id}?modestbranding=1&autoplay=0&origin=https://arkixd.se`
+---
+
+<style>
+iframe {
+  max-width: 100%;
+}
+</style>
+<iframe id="ytplayer" type="text/html" width="640" height="360"
+  src={src}
+  frameborder="0"></iframe>

@@ -1,0 +1,62 @@
+---
+import { getCssImgFromProps} from '../image';
+
+export interface Props {
+	d: any;
+}
+
+const { d } = Astro.props;
+const imagePath = getCssImgFromProps(d, {size:'s'});
+const onclick = `location.href='${d.url}';`;
+const style = `background-image:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 115, 142, 1)), ${imagePath}`;
+
+---
+
+<article onclick={onclick} style={style}>
+		<header>
+			<p class="year">{d.frontmatter.year}</p>
+			<a href={d.url}><h1 class="title">{d.frontmatter.title}</h1></a>
+		</header>
+		<p>{d.frontmatter.description}</p>
+</article>
+
+<style>
+	article {
+		padding: 1rem;
+		border-bottom: 4px solid var(--theme-divider);
+		display: inline-block;
+		background-image:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 115, 142, 1));
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-blend-mode: screen;
+		flex-grow: 1;
+		cursor: pointer;
+		min-height: 30vh;
+		min-width: min(100vw, 20em);
+	}
+
+	header {
+		align-items: flex-start;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-bottom: 2rem;
+		text-align: left;
+	}
+
+	.title,
+	.year {
+		margin: 0;
+	}
+
+	.year {
+		font-size: 1.25rem;
+		color: var(--theme-text-lighter);
+	}
+
+	.title {
+		font-size: 2.25rem;
+		font-weight: 700;
+		color: var(--theme-text);
+	}
+</style>
