@@ -1,0 +1,17 @@
+---
+import {getImageSrc} from '../image';
+
+export interface Props {
+  src: string;
+  base: string;
+}
+let { src, base, alt } = Astro.props;
+
+if (!base.startsWith('/')) {
+  base = '/src/pages/' + base;
+}
+
+const s = getImageSrc(src, base, {size:'m'});
+---
+
+<img alt={alt} src={s} />

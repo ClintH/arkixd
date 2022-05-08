@@ -51,6 +51,7 @@ async function process(input) {
   mkdirp.sync(destDirectory);
 
   if (ext === '.gif') {
+    console.log('CPY ' + destFullPath);
     fs.copyFileSync(input, destFullPath);
     return;
   }
@@ -60,6 +61,7 @@ async function process(input) {
   if (config.skipExisting && fs.existsSync(destFullSize)) {
     // skip
   } else {
+    console.log('OPT ' + destFullSize);
     sharp(input)
       .jpeg({mozjpeg: true, quality: config.quality})
       .toFile(destFullSize);
@@ -74,7 +76,7 @@ async function process(input) {
 
     const destCorrectedName = destDirectory + '/' + fileNameWithoutExt + '-' + sizeName + extToUse;
     if (config.skipExisting && fs.existsSync(destCorrectedName)) return;
-
+    console.log('RSZ ' + destCorrectedName);
     if (extToUse === '.png') {
       sharp(input)
         .resize(dim)
@@ -93,14 +95,15 @@ async function process(input) {
   try {
     const globby = await import('globby');
 
-    const paths = await globby.globby([
-      config.src + '**/*.jpg',
-      config.src + '**/*.gif',
-      config.src + '**/*.png'
-    ]);
+    const exts = 'jpg gif png webp'.split(' ');
+    const patterns = exts.map(e => config.src + '**/*.' + e);
+
+    const paths = await globby.globby(patterns);
     paths.forEach(p => {
       process(p);
     });
+
+    console.log('All done.');
   } catch (e) {
     console.log(e);
   }

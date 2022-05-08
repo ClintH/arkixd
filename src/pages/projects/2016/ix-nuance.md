@@ -1,0 +1,37 @@
+---
+templateKey: project-post
+title: Nuanced interaction
+course: Interactivity
+year: 2016
+creators: ''
+yearLevel: 'Second'
+tags:
+  - interactivity
+  - embodiment
+  - tangible
+image: nuance.jpg
+---
+
+In this two-week exploration, students investigated how to create nuanced action in relation to screen interaction.
+
+<div className="narrow section">
+
+# Scrolling
+## Oskar Hansson
+
+<MauVideo id="0_qje8gabf" />
+
+Rather than a single scroll region, this concept envisions different zones which scroll the content differently, for example by different articles or by different sections.
+
+</div>
+
+<div className="narrow section">
+
+# Tilt Paint
+## Linn Nerlund, Johanne Radford
+
+<MauVideo id="0_7uy6qzs8" />
+
+As the user draws with one hand, a secondary device can be tilted to change brush characteristics for bimodal interaction.
+
+</div>

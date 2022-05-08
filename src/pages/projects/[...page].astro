@@ -1,0 +1,112 @@
+---
+
+import HtmlHead from '../../components/HtmlHead.astro';
+import Heading from '../../components/Heading.astro';
+import Footer from '../../components/Footer.astro';
+import ProjectPreview from '../../components/ProjectPreview.astro';
+
+let title = 'Projects';
+let description = '';
+let permalink = 'https://arkixd.se/projects/';
+
+
+
+export async function getStaticPaths({paginate}) {
+	// Import MD for all projects
+	let allProjects = await Astro.glob('./**/*.md');
+
+	// Sort by year string
+	allProjects = allProjects.sort((a, b) => {
+		let aYear = a.frontmatter.year;
+		let bYear = b.frontmatter.year;
+		if (typeof aYear === `number`) aYear = aYear.toString();
+		if (typeof bYear === `number`) bYear = bYear.toString();
+		return bYear.localeCompare(aYear);
+	});
+
+  return paginate(allProjects, {pageSize: 20});
+}
+
+const { page } = Astro.props;
+
+---
+
+<html lang="en">
+	<head>
+		<HtmlHead {title} {description} {permalink} />
+
+		<style>
+			header {
+				width: 100%;
+				height: 100%;
+				background-color: var(--theme-bg-offset);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.content {
+				margin-top: 4rem;
+				margin-bottom: 8rem;
+			}
+
+			.content :global(main > * + *) {
+				margin-top: 1rem;
+			}
+
+			.intro {
+				padding-bottom: 4rem;
+				margin-bottom: 2rem;
+				border-bottom: 4px solid var(--theme-divider);
+			}
+
+			.intro > * {
+				margin: 0;
+			}
+
+			.list {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 1em;
+	
+			}
+
+			.pagination {
+				display:flex;
+			}
+			.pagination a {
+				display: inline-block;
+				font-size: 2em;
+				flex-grow: 1;
+				text-align:center;
+			}
+			.pagination a:hover {
+				text-decoration: none;
+			}
+
+			.invis, .invis:link, .invis:hover {
+				color:inherit;
+			}
+		</style>
+	</head>
+
+	<body>
+		<Heading />
+		<div class="wrapper">
+			<main class="content">
+				<section class="intro">
+					<h1><a class="invis" title="First page" href="/projects/">{title}</a></h1>
+					<p>{description}</p>
+				</section>
+				<section class="list" aria-label="Exhibition list">
+					{page.data.map((d) => <ProjectPreview d={d} />)}
+				</section>
+				<section class="pagination">
+					{page.url.prev && <a title="Previous page" href={page.url.prev}>&larr;</a>}
+					{page.url.next && <a title="Next page" href={page.url.next}>&rarr;</a>}
+				</section>
+			</main>
+		</div>
+		<Footer />
+	</body>
+</html>
