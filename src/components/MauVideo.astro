@@ -1,8 +1,8 @@
 ---
-console.log('Image set');
+const id = Astro.props.id;
+const src = `https://api.kaltura.nordu.net/p/326/sp/0/playManifest/entryId/${id}/format/url/flavorParamId/0/video.mp4`;
 ---
 
-<div>
-  <p>MauVideo?</p>
-  <slot />
-</div>
+<figure>
+  <video controls src={src}></video>
+</figure>

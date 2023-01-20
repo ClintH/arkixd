@@ -1,11 +1,15 @@
-import {defineConfig} from 'astro/config';
-//import preact from '@astrojs/preact';
-//import {astroImageTools} from "astro-imagetools";
-//import react from "@astrojs/react";
+import { defineConfig } from 'astro/config';
+import image from "@astrojs/image";
+import mdx from "@astrojs/mdx";
+import { remarkImg} from './tools/remarkImg.mjs';
 
-// https://astro.build/config
-// export default defineConfig({
-//   integrations: [preact(), react()]
-// });
-
-export default defineConfig();
+export default defineConfig({
+  output: "static",
+  markdown: {
+    remarkPlugins: [ remarkImg ]
+  },
+  integrations: [
+    image(), 
+    mdx()
+  ]
+});

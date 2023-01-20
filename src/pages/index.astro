@@ -1,160 +1,43 @@
 ---
-// import { Picture } from "astro-imagetools/components";
-// import oskar from "../images/stalberg-oskar.jpg";
-
-// Component Imports
 import HtmlHead from '../components/HtmlHead.astro';
+import PageHeader from '../components/PageHeader.astro';
+import ProjectPreview from '../components/ProjectPreview.astro';
 import Footer from '../components/Footer.astro';
 
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
-let title = 'Arkixd. Works from the Interaction Design Bachelor programme in Malmö Sweden';
-let description = 'Works from the Interaction Design Bachelor programme in Malmö Sweden';
+const maxProjects = 6;
+let title =
+  'Works from the Interaction Design Bachelor programme in Malmö, Sweden';
 let permalink = 'https://arkixd.se/';
-
+let description = '';
 // Data Fetching: List all Markdown posts in the repo.
-let allPosts = await Astro.glob('./posts/*.md');
-allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf());
 
-// let allEx = await Astro.glob('./exhibitions/*.md');
-// allEx = allEx.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf());
-
+let allPosts = await Astro.glob('./projects/**/*.mdx');
+allPosts = allPosts
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.year).valueOf() -
+      new Date(a.frontmatter.year).valueOf()
+  )
+  .slice(0, maxProjects);
 ---
 
 <html lang="en">
-	<head>
-		<HtmlHead {title} {description} {permalink} />
-
-		<style>
-			header {
-				width: 100%;
-				height: 100%;
-				background-color: var(--theme-bg-offset);
-				display: flex;
-				align-items: center;
-				justify-content: center;
-			}
-
-			.content {
-				margin-top: 4rem;
-				margin-bottom: 8rem;
-			}
-
-			.content :global(main > * + *) {
-				margin-top: 1rem;
-			}
-
-			.intro {
-				padding-bottom: 4rem;
-				margin-bottom: 2rem;
-				border-bottom: 4px solid var(--theme-divider);
-			}
-
-			.intro > * {
-				margin: 0;
-			}
-
-			.latest {
-				font-size: 2.5rem;
-				font-weight: 700;
-			}
-
-			.header {
-				font-weight: 400;
-				margin-top: 10vh;
-				margin-bottom: 10vh;
-			}
-			.hero {
-				color: var(--color-red);
-				font-weight: 700;
-			}
-
-			h2 {
-				font-size: 1.5em;
-				margin-top: 1em;
-				margin-bottom: 0.2em;
-			}
-
-			iframe {
-				aspect-ratio: 16 / 9;
-				height: 100%;
-				width: 100%;
-			}
-
-			.flexSxS {
-				display: flex;
-				flex-direction: row;
-				flex-wrap: wrap;
-			}
-			.flexSxS>div {
-				display: inline-block;
-			}
-		</style>
-	</head>
-
-	<body>
-		<div class="header wrapper">
-			<span class="hero">Arkixd.</span> Works from the interaction design bachelor programme at Malmö University.
-			<div class="headerSub">
-				<a href="about">About the programme</a>.
-			</div>
-		</div>
-		<div class="wrapper">
-			<div class="exhibition">
-			<img style="display:block;max-width:10em" alt="Logo of exhibition" src="/exhibition-logo.png">
-			<h1 style="color: var(--theme-accent); margin:0">Exhibition</h1>
-			<div style="font-weight: 700; text-transform: uppercase">Interaction Design Bachelor</div>
-			<div style="font-weight: 700; text-transform: uppercase; margin-bottom: 1.5em">27 May 16:00 - 19:00 </div>
-			<p>The end of year exhibition brings students, alumni and the wider Malmö community together. Work from the bachelor programme's three year levels are shown, ranging from short five-week projects through to final theses.</p>
-			<p>This afterwork event will be kicked-off by an engaging keynote, with exploration and conversation continuing on into the exhibition. Light refreshments will be served.</p>
-
-			<h2>Schedule</h2>
-			<em>Subject to change...</em>
-			<table>
-			<tr><td>15.30</td><td>Doors open</td></tr>
-			<tr><td>16.00</td><td>Keynote: Oskar Stålberg</td></tr>
-			<tr><td>17.00</td><td>Exhibition opens</td></tr>
-			</table>
-			<h2>Location</h2>
-			<p>Gäddan building, Malmö University, <a href="https://goo.gl/maps/44rpWvJaDJa8amyd9">Norra Neptunigatan 36</a> (next to Malmö Saluhall).</p>
-			<h2>Register</h2>
-			<p>To assist planning, please <a href="https://docs.google.com/forms/d/18c04dr3gwrcuI9jIFZzktVfKLYAbGWRDykUt6AuusEc/edit">register</a>. For enquiries, please email <a href="mailto:sarah.skavron@gmail.com">Sarah</a>.</p>
-
-			<h2>Keynote: Oskar Stålberg</h2>
-
-			<div class="flexSxS">
-				<div>
-					<img src="./assets/stalberg-oskar.jpg"
-							alt="Photograph of Oskar Stålberg"
-							width={200}
-							style="margin-right:1em"
-						/>
-				</div>
-				<div style="min-width:50vw">
-					<p>Oskar Stålberg is the creator of <a href="https://www.townscapergame.com/">Townscaper</a>, a serene game - or is it a toy? - which lets players create their own town without an overarching goal. In the short time it has been out, <em>Townscaper</em> has received a lot of attention across the gaming landscape, with even the <em>The Washington Post</em> giving a glowing review.</p>
-
-					<p>Oskar will tell the story behind <em>Townscaper</em> and the design decisions behind its playful and engaging interactions. Interestingly, <em>Townscaper</em> uses an algorithm behind the scenes that enables simple, yet beautiful and organic townscapes with little moments of surprise.</p>
-
-					<p>Oskar Stålberg is an independent video game developer specialised in procedural generation. In addition to <em>Townscaper</em>, he has made <a href="https://www.badnorth.com/"><em>Bad North</em></a>.</p>
-				</div>
-			</div>
-			<table>
-			<tr>
-				<td>
-				
-				</td>
-				<td>
-							</td>
-				</tr>
-			</table>
-			</div>
-			<div class="wrapper centered" style="margin-top: 2em">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/QtVkteAS15M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	
-			</div>
-		</div>
-		<Footer />
-	</body>
+  <head>
+    <HtmlHead {title} {description} {permalink} />
+  </head>
+  <body>
+    <PageHeader />
+    <div class="container">
+      <div class="wrapper">
+        <section class="intro">
+          <h1>{title}</h1>
+          <p>{description}</p>
+        </section>
+      </div>
+    </div>
+    <section class="wrap-list" aria-label="Recent project list">
+      {allPosts.map((p) => <ProjectPreview project={p} />)}
+    </section>
+    <Footer />
+  </body>
 </html>

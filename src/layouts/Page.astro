@@ -8,20 +8,27 @@ import BlogPost from '../components/BlogPost.astro';
 //const { title, description, publishDate, author, heroImage, permalink, alt } = content;
 let { title } = Astro.props;
 
-if (title === undefined && Astro.params.content) title = Astro.props.content.title;
+if (title === undefined && Astro.params.content)
+  title = Astro.props.content.title;
 ---
 
-<html lang='en'>
-	<head>
-		<HtmlHead {title} />
-	</head>
+<html lang="en">
+  <head>
+    <HtmlHead {title} />
+  </head>
 
-	<body>
-		<PageHeader />
-		<div class="wrapper">
-				<slot />
-		</div>
+  <body>
+    <PageHeader />
+    <div class="container">
+      <div class="wrapper">
+        <h1>{title}</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="wrapper">
+        <slot />
+      </div>
+    </div>
     <Footer />
-	</body>
-
+  </body>
 </html>

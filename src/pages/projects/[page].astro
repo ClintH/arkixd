@@ -1,0 +1,67 @@
+---
+// import HtmlHead from '../../components/HtmlHead.astro';
+// import Heading from '../../components/Heading.astro';
+// import Footer from '../../components/Footer.astro';
+
+import ProjectPreview from '../../components/ProjectPreview.astro';
+import PageWide from '../../layouts/PageWide.astro';
+
+let title = 'Projects';
+let description = '';
+let permalink = 'https://arkixd.se/projects/';
+
+export async function getStaticPaths({ paginate }) {
+  // Import MD for all projects
+  let allProjects = await Astro.glob('./**/*.mdx');
+
+  // Sort by year string
+  allProjects = allProjects.sort((a, b) => {
+    let aYear = a.frontmatter.year;
+    let bYear = b.frontmatter.year;
+    if (typeof aYear === `number`) aYear = aYear.toString();
+    if (typeof bYear === `number`) bYear = bYear.toString();
+    return bYear.localeCompare(aYear);
+  });
+
+  return paginate(allProjects, { pageSize: 10 });
+}
+
+const { page } = Astro.props;
+---
+
+<style>
+  .pagination {
+    display: flex;
+  }
+  .pagination a {
+    display: inline-block;
+    font-size: 2em;
+    flex-grow: 1;
+    text-align: center;
+  }
+  .pagination a:hover {
+    text-decoration: none;
+  }
+</style>
+
+<PageWide title={title}>
+  {page.data.map((project) => <ProjectPreview project={project} />)}
+  <section slot="after-list" class="container pagination">
+    <div class="wrapper">
+      {
+        page.url.prev && (
+          <a title="Previous page" href={page.url.prev}>
+            &larr;
+          </a>
+        )
+      }
+      {
+        page.url.next && (
+          <a title="Next page" href={page.url.next}>
+            &rarr;
+          </a>
+        )
+      }
+    </div>
+  </section>
+</PageWide>

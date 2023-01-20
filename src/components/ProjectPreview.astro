@@ -1,81 +1,81 @@
 ---
-import { getImgSrcFromProps} from '../image';
+import { getImgSrcFromProps } from '../image';
 import BackgroundImage from './BackgroundImage.astro';
 export interface Props {
-	d: any;
+  project: any;
 }
 
-const { d } = Astro.props;
-const imagePath = getImgSrcFromProps(d, {size:'s'});
+const { project } = Astro.props;
+const d = project;
+const imagePath = getImgSrcFromProps(d, { size: 's' });
 const onclick = `location.href='${d.url}';`;
 const style = `background-image:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 115, 142, 1)), ${imagePath}`;
 
-const {course, subTitle, title} = d.frontmatter;
+const { course, subTitle, title } = d.frontmatter;
 const creators = d.frontmatter.creators ?? '';
 
-const preTitle = (creators.indexOf(',') > 0 || creators.length == 0) ? course : creators;
+const preTitle =
+  creators.indexOf(',') > 0 || creators.length == 0 ? course : creators;
 ---
 
 <article onclick={onclick}>
- <BackgroundImage url={imagePath}>
-		<header>
-			{preTitle && <p class="preTitle">{preTitle}</p>}
-			<a href={d.url}><h1 class="title">{title}</h1></a>
-			{subTitle && <h2 class="subTitle">{subTitle}</h2>}
-		</header>
- </BackgroundImage>
-
-
+  <BackgroundImage url={imagePath}>
+    <header>
+      {preTitle && <p class="preTitle">{preTitle}</p>}
+      <a href={d.url}><h1 class="title">{title}</h1></a>
+      {subTitle && <h2 class="subTitle">{subTitle}</h2>}
+    </header>
+  </BackgroundImage>
 </article>
 
 <style>
-	article {
-		display: inline-block;
-		flex-grow: 1;
-		cursor: pointer;
-		max-width: 25rem;
-		min-height: 20rem;
-	}
+  article {
+    display: inline-block;
+    flex-grow: 1;
+    cursor: pointer;
+    height: 20vh;
+    min-height: 20em;
+    width: 100%;
+  }
 
   @media (max-width: 600px) {
     article {
-			min-width: 100%;
-		}
+      min-width: 100%;
+    }
   }
 
-	header {
-		align-items: flex-start;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		text-align: left;
-		height: 100%;
-		width: 100%;
-	}
+  header {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+  }
 
+  .title,
+  .preTitle,
+  .subTitle {
+    background: var(--color-black);
+    color: var(--color-white);
+    padding: 0.4rem;
+    margin: 0;
+  }
 
-	.title,
-	.preTitle,
-	.subTitle {
-		background: var(--color-black);
-		color: var(--color-white);
-		padding: 0.4rem;
-		margin: 0;
-	}
+  .preTitle {
+    padding-bottom: 0;
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+  }
 
-	.preTitle {
-		padding-bottom: 0;
-		font-size: 0.8rem;
-		letter-spacing: 0.05rem;
-		text-transform: uppercase;
-	}
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+  }
 
-	.title {
-		font-size: 2rem;
-		font-weight: 700;
-	}
-
-	.subTitle {
-		font-size: 1rem;
-	}
+  .subTitle {
+    font-size: 1rem;
+  }
 </style>

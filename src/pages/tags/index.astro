@@ -1,0 +1,24 @@
+---
+import Page from '../../layouts/Page.astro';
+let title = 'Tags';
+
+const allPosts = await Astro.glob('../projects/**/*.mdx');
+const tagsRaw = [
+  ...new Set(allPosts.map((post) => post.frontmatter.tags ?? []).flat()),
+];
+const tags = tagsRaw
+  .filter((t) => t !== undefined && t !== null && t.length > 0)
+  .sort();
+---
+
+<Page title="Tags">
+  <ul>
+    {
+      tags.map((tag) => (
+        <li>
+          <a href={'/tags/' + tag.replace(' ', '%20')}>{tag}</a>
+        </li>
+      ))
+    }
+  </ul>
+</Page>

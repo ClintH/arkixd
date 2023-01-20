@@ -1,0 +1,34 @@
+---
+import HtmlHead from '../components/HtmlHead.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Footer from '../components/Footer.astro';
+import BlogPost from '../components/BlogPost.astro';
+
+//const { content } = Astro.props;
+//const { title, description, publishDate, author, heroImage, permalink, alt } = content;
+let { title } = Astro.props;
+
+if (title === undefined && Astro.params.content)
+  title = Astro.props.content.title;
+---
+
+<html lang="en">
+  <head>
+    <HtmlHead {title} />
+  </head>
+
+  <body>
+    <PageHeader />
+    <div class="container">
+      <div class="wrapper">
+        <h1>{title}</h1>
+      </div>
+    </div>
+    <slot name="before-list" />
+    <section class="wrap-list" aria-label="Recent project list">
+      <slot />
+    </section>
+    <slot name="after-list" />
+    <Footer />
+  </body>
+</html>
