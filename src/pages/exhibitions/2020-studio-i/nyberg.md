@@ -2,7 +2,7 @@
 course: studio 1
 templateKey: exhibition-post
 yearLevel: 'First'
-year: "2020.2"
+year: 2020
 priority: 99
 title: Marks of Usage, Exploring Textures in a Digital Interface
 creators: Samuel Nyberg

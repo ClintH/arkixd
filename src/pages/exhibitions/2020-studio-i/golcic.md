@@ -3,7 +3,7 @@ templateKey: exhibition-post
 title: Locomotion in Virtual Reality
 course: studio 1
 yearLevel: 'First'
-year: "2020.2"
+year: 2020
 priority: 99
 creators: Christian Golcic
 tags:

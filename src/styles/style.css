@@ -400,3 +400,7 @@ ul.inline li:last-child::after {
 .meta p {
 	color: gray;
 }
+
+ul {
+	color: var(--theme-text-light);
+}

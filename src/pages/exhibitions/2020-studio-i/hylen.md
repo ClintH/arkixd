@@ -2,7 +2,7 @@
 course: studio 1
 templateKey: exhibition-post
 yearLevel: 'First'
-year: "2020.2"
+year: 2020
 priority: 12
 title: Pliable lightsources, shaping light with your hands
 creators: Jacob Hylén

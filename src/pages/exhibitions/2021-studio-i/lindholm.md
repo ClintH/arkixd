@@ -2,7 +2,7 @@
 course: studio 1
 templateKey: exhibition-post
 yearLevel: 'First'
-year: "2021.2"
+year: 2021
 priority: 30
 title: Let's Play
 creators: Sanna Lindholm

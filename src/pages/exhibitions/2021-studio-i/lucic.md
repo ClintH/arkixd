@@ -2,7 +2,7 @@
 course: studio 1
 templateKey: exhibition-post
 yearLevel: 'First'
-year: "2021.2"
+year: 2021
 priority: 99
 title: Social Media for Athletes who Lack Motivation for Physical Activity in the Pandemic – Sporteefy
 creators: Karlo Lucic

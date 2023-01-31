@@ -2,7 +2,7 @@
 course: studio 1
 templateKey: exhibition-post
 yearLevel: 'First'
-year: "2021.2"
+year: 2021
 priority: 50
 title: Collaborative Mobile Game for Older Adults
 creators: Joanne Ju

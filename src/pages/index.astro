@@ -3,6 +3,7 @@ import HtmlHead from '../components/HtmlHead.astro';
 import PageHeader from '../components/PageHeader.astro';
 import ProjectPreview from '../components/ProjectPreview.astro';
 import Footer from '../components/Footer.astro';
+import { sortTopProjects } from 'src/util';
 
 const maxProjects = 6;
 let title =
@@ -11,14 +12,15 @@ let permalink = 'https://arkixd.se/';
 let description = '';
 // Data Fetching: List all Markdown posts in the repo.
 
-let allPosts = await Astro.glob('./projects/**/*.mdx');
-allPosts = allPosts
-  .sort(
-    (a, b) =>
-      new Date(b.frontmatter.year).valueOf() -
-      new Date(a.frontmatter.year).valueOf()
-  )
-  .slice(0, maxProjects);
+let allProjects = await Astro.glob('./projects/**/*.mdx');
+// allProjects = allProjects
+//   .sort(
+//     (a, b) =>
+//       new Date(b.frontmatter.year).valueOf() -
+//       new Date(a.frontmatter.year).valueOf()
+//   )
+//   .slice(0, maxProjects);
+allProjects = sortTopProjects(allProjects, maxProjects);
 ---
 
 <html lang="en">
@@ -36,7 +38,7 @@ allPosts = allPosts
       </div>
     </div>
     <section class="wrap-list" aria-label="Recent project list">
-      {allPosts.map((p) => <ProjectPreview project={p} />)}
+      {allProjects.map((p) => <ProjectPreview project={p} />)}
     </section>
     <Footer />
   </body>

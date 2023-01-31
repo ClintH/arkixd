@@ -2,7 +2,7 @@
 course: studio 1
 templateKey: exhibition-post
 yearLevel: 'First'
-year: "2020.2"
+year: 2020
 priority: 99
 title: Concept evaluation method - a new take on HOQ 
 creators: Michaela Poprocká

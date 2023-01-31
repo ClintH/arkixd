@@ -1,7 +1,7 @@
 ---
 course: studio 1
 yearLevel: 'First'
-year: "2021.2"
+year: 2021
 priority: 1
 title: Find my Touch
 creators: Linn Claesson

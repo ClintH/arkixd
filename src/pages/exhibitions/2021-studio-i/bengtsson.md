@@ -1,7 +1,7 @@
 ---
 course: studio 1
 yearLevel: 'First'
-year: "2021.2"
+year: 2021
 priority: 80
 title: A Report System that Decreases Toxic Behavior Between Video Game Players
 creators: Thomas Bengtsson

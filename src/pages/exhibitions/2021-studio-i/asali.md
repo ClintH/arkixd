@@ -2,7 +2,7 @@
 course: studio 1
 templateKey: exhibition-post
 yearLevel: 'First'
-year: "2021.2"
+year: 2021
 priority: 80
 title: Using AI Algorithm to Help Build Trust During Video Chatting
 creators: Moawia Asali

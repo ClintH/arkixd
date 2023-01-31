@@ -2,7 +2,7 @@
 course: studio 1
 templateKey: exhibition-post
 yearLevel: 'First'
-year: "2020.2"
+year: 2020
 priority: 6
 title: Stop-Motion for Sketching Transitions in User Interface Design
 creators: Ivar Lundin

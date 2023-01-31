@@ -2,7 +2,7 @@
 course: studio 1
 templateKey: exhibition-post
 yearLevel: 'First'
-year: "2020.2"
+year: 2020
 priority: 3
 title: Notion of empathy in Cultural Probes
 creators: Vera Boateng

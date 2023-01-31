@@ -1,0 +1,30 @@
+---
+import Page from '../../layouts/Page.astro';
+import ProjectPreview from '../../components/ProjectPreview.astro';
+import { sortTopProjects } from 'src/util';
+
+const allProjects = await Astro.glob('../projects/**/*.mdx');
+const yearsSet = new Set();
+allProjects.forEach((p) => {
+  let year = p.frontmatter.year;
+  if (typeof year === `number`) year = year.toString();
+  yearsSet.add(year);
+});
+const years = Array.from(yearsSet).sort();
+let projects = sortTopProjects(allProjects, 10);
+---
+
+<Page title="Projects">
+  By year: <ul class="inline">
+    {
+      years.map((y) => (
+        <li>
+          <a href={'/projects/' + y + '/'}>{y}</a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <h2>Recent</h2>
+  {projects.map((project) => <ProjectPreview project={project} />)}
+</Page>

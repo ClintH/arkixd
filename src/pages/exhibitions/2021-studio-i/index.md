@@ -1,6 +1,6 @@
 ---
 title: Studio I
-year: '2021.2'
+year: 2021
 course: studio 1
 image: lindholm-0.jpg
 layout: ../../../layouts/ExhibitionPage.astro

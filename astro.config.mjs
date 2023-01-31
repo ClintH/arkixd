@@ -5,6 +5,9 @@ import { remarkImg} from './tools/remarkImg.mjs';
 
 export default defineConfig({
   output: "static",
+  build: {
+    format: `file`
+  },
   markdown: {
     remarkPlugins: [ remarkImg ]
   },

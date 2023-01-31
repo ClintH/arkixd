@@ -2,7 +2,7 @@
 course: studio 1
 templateKey: exhibition-post
 yearLevel: 'First'
-year: "2020.2"
+year: 2020
 priority: 5
 title: Unpacking Machine Learning as a design material with gestures as a modality
 creators: Johan Franzén

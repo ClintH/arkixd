@@ -2,7 +2,7 @@
 course: studio 1
 templateKey: exhibition-post
 yearLevel: 'First'
-year: "2021.2"
+year: 2021
 priority: 1
 title: "Togetherness Through Sound: an Exploration of Sound as a Material"
 creators: Renato Vieira Ribeiro

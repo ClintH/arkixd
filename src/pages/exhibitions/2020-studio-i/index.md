@@ -1,7 +1,7 @@
 ---
 templateKey: exhibition-page
 title: Studio I
-year: "2020.2"
+year: 2020
 course: studio 1
 image: deltreppo-0.jpg
 layout: ../../../layouts/ExhibitionPage.astro
