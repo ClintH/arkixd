@@ -25,7 +25,7 @@ function validateConfig(c) {
   const startsWithSlash = (v) => v.startsWith('/');
   const endsWithSlash = (v) => v.endsWith('/');
   if (startsWithSlash(c.src)) throw new Error(`src should be a relative path`);
-  if (startsWithSlash(c.dest)) throw new Error(`dest shoudl be a relative path`);
+  if (startsWithSlash(c.dest)) throw new Error(`dest should be a relative path`);
   if (!endsWithSlash(c.src)) throw new Error(`src must end with slash`);
   if (!endsWithSlash(c.dest)) throw new Error(`dest must end with slash`);
 }
