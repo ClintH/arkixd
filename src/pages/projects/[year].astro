@@ -1,16 +1,16 @@
 ---
 import Page from '../../layouts/Page.astro';
 import ProjectPreview from '../../components/ProjectPreview.astro';
+import { getCollection } from 'astro:content';
 
 export async function getStaticPaths({ paginate }) {
   // Import MD for all projects
-  let allProjects = await Astro.glob('./**/*.mdx');
+  let allProjects = await getCollection('projects');
 
   const years = new Set();
   allProjects.forEach((p) => {
-    let year = p.frontmatter.year;
-    if (typeof year === `number`) year = year.toString();
-    years.add(year);
+    let year = p.data.year;
+    years.add(year.toString());
   });
 
   let yearsArray = Array.from(years);
@@ -22,10 +22,8 @@ export async function getStaticPaths({ paginate }) {
 
 const { year } = Astro.params;
 
-let allProjects = await Astro.glob('./**/*.mdx');
-let projects = allProjects.filter(
-  (p) => p.frontmatter.year.toString() === year
-);
+let allProjects = await getCollection('projects');
+let projects = allProjects.filter((p) => p.data.year.toString() === year);
 ---
 
 <Page title="Projects">

@@ -1,67 +1,59 @@
 ---
 import Page from './Page.astro';
 import ExhibitionProject from '../components/ExhibitionProject.astro';
+import { getCollection } from 'astro:content';
 
-const content = Astro.props.content;
-const {title, year, priorityMax} = content;
+const exhibition = Astro.props.exhibition;
+const { title, year, priorityMax } = exhibition.data;
 
-// Fetch all projects, filter to this course
-let projects = await Astro.glob(`../pages/exhibitions/**/*.md`);
+// Fetch all projects, filter to this exhibition and its priority
+let projects = await getCollection('exhibition-content', (c) => {
+  return (
+    c.data.exhibition === exhibition.slug && c.data.priority <= priorityMax
+  );
+});
 
-// Filter
-projects = projects.filter(p => 
-    !p.file.endsWith('index.md') && 
-    p.frontmatter.course === content.course &&
-    p.frontmatter.year == content.year);
-
-if (priorityMax) {
-  projects = projects.filter(p => p.frontmatter.priority <= priorityMax);
-}
-
-projects.sort((a,b) => {
-  const aP = a.frontmatter.priority;
-  const bP = b.frontmatter.priority;
-  if (aP === bP) return 0;
-  if (aP > bP) return 1;
-  return -1;
+projects.sort((a, b) => {
+  const aP = a.data.priority;
+  const bP = b.data.priority;
+  return aP === bP ? 0 : aP > bP ? 1 : -1;
 });
 ---
 
 <Page>
-<main class="content">
+  <main class="content">
+    <div>{year}</div>
+    <h1>{title}</h1>
+    <section class="intro">
+      <slot />
+    </section>
+    <section class="list" aria-label="Exhibition list">
+      {projects.map((p) => <ExhibitionProject project={p} />)}
+    </section>
 
-  <div>{year}</div>
-  <h1>{title}</h1>
-  <section class="intro">
-    <slot />
-  </section>
-  <section class="list" aria-label="Exhibition list">
-    {projects.map(p=> <ExhibitionProject project={p} />)}
-  </section>
+    <style>
+      .intro {
+        padding-bottom: 4rem;
+        margin-bottom: 2rem;
+        border-bottom: 4px solid var(--theme-divider);
+      }
 
-  <style>
-  .intro {
-    padding-bottom: 4rem;
-    margin-bottom: 2rem;
-    border-bottom: 4px solid var(--theme-divider);
-  }
+      .intro > * {
+        margin: 0;
+      }
 
-  .intro > * {
-    margin: 0;
-  }
+      .list {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .content {
+        margin-top: 4rem;
+        margin-bottom: 8rem;
+      }
 
-  .list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .content {
-    margin-top: 4rem;
-    margin-bottom: 8rem;
-  }
-
-  .content :global(main > * + *) {
-    margin-top: 1rem;
-  }
-  </style>
+      .content :global(main > * + *) {
+        margin-top: 1rem;
+      }
+    </style>
   </main>
 </Page>

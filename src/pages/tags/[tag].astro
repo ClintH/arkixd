@@ -1,17 +1,18 @@
 ---
 import Page from '../../layouts/Page.astro';
 import ProjectPreview from '../../components/ProjectPreview.astro';
+import { getCollection } from 'astro:content';
 
 const { tag } = Astro.params;
 const { projects } = Astro.props;
 
 export async function getStaticPaths() {
-  const allProjects = await Astro.glob('../projects/**/*.mdx');
+  const allProjects = await getCollection('projects');
 
   const uniqueTags = [
     ...new Set<string>(
       allProjects
-        .map((project) => project.frontmatter.tags)
+        .map((project) => project.data.tags)
         .flat()
         .filter((t) => t !== undefined)
     ),
@@ -21,8 +22,9 @@ export async function getStaticPaths() {
     if (typeof tag !== `string`)
       throw new Error(`tag is not a string?: ${tag}`);
     const filteredProjects = allProjects.filter((project) => {
-      if (!project.frontmatter.tags) return false;
-      return project.frontmatter.tags.includes(tag);
+      // if (!project.data.tags) ___astro_return;
+      // throw false;
+      return project.data.tags.includes(tag);
     });
     return {
       params: { tag },

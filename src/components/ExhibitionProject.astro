@@ -1,58 +1,57 @@
 ---
-import { getImgSrcFromProps,getImageSrc} from '../image';
+import { CollectionEntry } from 'astro:content';
 import YouTube from './YouTube.astro';
+import { getImage, Image } from 'astro:assets';
 
 export interface Props {
-	project: any;
+  project: CollectionEntry<'exhibition-content'>;
 }
 
 const { project } = Astro.props;
-const {title, creators, youtubeID} = project.frontmatter;
+const { Content } = await project.render();
 
-const additionalImages = project.frontmatter.additionalImages ?? [];
-const additionalImagesSrcs = additionalImages.map(g => getImageSrc(g, project.file, {}));
-const imagePath = getImgSrcFromProps(project, {size:'m'});
-
+const d = project.data;
+const additionalImages = d.additionalImages ?? [];
 ---
 
 <article>
-	<header>
-    <h2 class="creators">{creators}</h2>
-		<h1 class="title">{title}</h1>
-	</header>
+  <header>
+    <h2 class="creators">{d.creators}</h2>
+    <h1 class="title">{d.title}</h1>
+  </header>
   <div class="content">
     <div class="img">
-      <img src={imagePath}>
+      <Image alt="Project image" src={d.image} />
     </div>
     <div class="description">
-      <project.Content />
-
+      <Content />
     </div>
-
   </div>
   <div class="appendices">
-    {youtubeID && <YouTube id={youtubeID} />}
-    {additionalImagesSrcs.map(g => <img src={g}>)}
+    {d.youtubeID && <YouTube id={d.youtubeID} />}
+    {additionalImages.map((g) => <Image alt="Project image" src={g} />)}
   </div>
-<a class="invis" href="#top">↑</a>
+  <a class="invis" href="#top">↑</a>
 </article>
 
 <style>
-.invis,.invis:visited,.invis:hover {
-  color: var(--theme-text);
-  text-decoration: none;
-}
-.appendices {
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-.appendices img {
-  max-width: 90%;
-}
+  .invis,
+  .invis:visited,
+  .invis:hover {
+    color: var(--theme-text);
+    text-decoration: none;
+  }
+  .appendices {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .appendices img {
+    max-width: 90%;
+  }
 
   article {
     display: flex;
@@ -61,7 +60,6 @@ const imagePath = getImgSrcFromProps(project, {size:'m'});
     padding-top: 2em;
     padding-bottom: 1em;
     border-bottom: 4px solid var(--theme-divider);
-
   }
   .content {
     display: flex;
@@ -69,14 +67,14 @@ const imagePath = getImgSrcFromProps(project, {size:'m'});
     flex-direction: column;
     gap: 1em;
   }
-  
+
   .description {
     max-width: 50vw;
   }
   @media (max-width: 500px) {
     .content {
       flex-direction: row;
-      flex-wrap:wrap;
+      flex-wrap: wrap;
     }
     .img {
       width: 100%;
@@ -91,38 +89,37 @@ const imagePath = getImgSrcFromProps(project, {size:'m'});
     width: 100%;
   }
 
-	header {
-		align-items: flex-start;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		text-align: left;
-	}
+  header {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
 
   header h2 {
-    margin:0;
+    margin: 0;
     font-size: 1em;
   }
   header h1 {
     font-weight: 400;
     font-size: 1.6em;
     margin-bottom: 0.5em;
-
   }
-	.title,
-	.creators {
-		margin: 0;
-	}
-	
-	.creators {
-		font-size: 1.25rem;
-		color: var(--theme-text-lighter);
-    text-transform: uppercase;
-	}
+  .title,
+  .creators {
+    margin: 0;
+  }
 
-	.title {
-		font-size: 2.25rem;
-		font-weight: 700;
-		color: var(--theme-text);
-	}
+  .creators {
+    font-size: 1.25rem;
+    color: var(--theme-text-lighter);
+    text-transform: uppercase;
+  }
+
+  .title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--theme-text);
+  }
 </style>

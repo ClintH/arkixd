@@ -18,7 +18,8 @@ const config = {
     m: 600,
     l: 1200
   },
-  skipExisting: true
+  skipExisting: true,
+  copyOriginal: true
 };
 
 function validateConfig(c) {
@@ -54,6 +55,9 @@ async function process(input) {
     console.log('CPY ' + destFullPath);
     fs.copyFileSync(input, destFullPath);
     return;
+  } else if (config.copyOriginal) {
+    console.log('CPY ' + destFullPath);
+    fs.copyFileSync(input, destFullPath);
   }
 
   // Optimise full size
@@ -70,7 +74,6 @@ async function process(input) {
   // Generate various sizes
   // eg. file-s.jpg, file-m.jpg, file-l.jpg
   for (const [sizeName, dim] of Object.entries(config.sizes)) {
-
     // Let PNG go through, everything else convert to JPEG
     let extToUse = ext === '.png' ? '.png' : '.jpg';
 

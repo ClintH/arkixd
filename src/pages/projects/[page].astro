@@ -3,6 +3,7 @@
 // import Heading from '../../components/Heading.astro';
 // import Footer from '../../components/Footer.astro';
 
+import { getCollection } from 'astro:content';
 import ProjectPreview from '../../components/ProjectPreview.astro';
 import PageWide from '../../layouts/PageWide.astro';
 
@@ -12,14 +13,12 @@ let permalink = 'https://arkixd.se/projects/';
 
 export async function getStaticPaths({ paginate }) {
   // Import MD for all projects
-  let allProjects = await Astro.glob('./**/*.mdx');
+  let allProjects = await getCollection('projects');
 
   // Sort by year string
   allProjects = allProjects.sort((a, b) => {
-    let aYear = a.frontmatter.year;
-    let bYear = b.frontmatter.year;
-    if (typeof aYear === `number`) aYear = aYear.toString();
-    if (typeof bYear === `number`) bYear = bYear.toString();
+    let aYear = a.data.year.toString();
+    let bYear = b.data.year.toString();
     return bYear.localeCompare(aYear);
   });
 

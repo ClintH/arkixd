@@ -1,28 +1,34 @@
 ---
-import { getImgSrcFromProps } from '../image';
+import { CollectionEntry } from 'astro:content';
 import BackgroundImage from './BackgroundImage.astro';
+import { getImage } from 'astro:assets';
 export interface Props {
-  project: any;
+  project: CollectionEntry<'projects'>;
 }
 
 const { project } = Astro.props;
 const d = project;
-const imagePath = getImgSrcFromProps(d, { size: 's' });
-const onclick = `location.href='${d.url}';`;
-const style = `background-image:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 115, 142, 1)), ${imagePath}`;
+const image = await getImage(project.data.image, {});
+const url = `/projects/${project.slug}`;
 
-const { course, subTitle, title } = d.frontmatter;
-const creators = d.frontmatter.creators ?? '';
+const onclick = `location.href='${url}';`;
+const style = `background-image:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 115, 142, 1)), ${image.src}`;
 
-const preTitle =
-  creators.indexOf(',') > 0 || creators.length == 0 ? course : creators;
+const { course, subTitle, title } = d.data;
+const creators = d.data.creators ?? '';
+
+const manyCreators =
+  creators.indexOf(',') > 0 ||
+  (Array.isArray(creators) && creators.length > 1) ||
+  (typeof creators === 'string' && creators.length === 0);
+const preTitle = manyCreators ? course : creators;
 ---
 
 <article onclick={onclick}>
-  <BackgroundImage url={imagePath}>
+  <BackgroundImage url={image.src}>
     <header>
       {preTitle && <p class="preTitle">{preTitle}</p>}
-      <a href={d.url}><h1 class="title">{title}</h1></a>
+      <a href={url}><h1 class="title">{title}</h1></a>
       {subTitle && <h2 class="subTitle">{subTitle}</h2>}
     </header>
   </BackgroundImage>

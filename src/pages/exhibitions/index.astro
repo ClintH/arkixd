@@ -3,17 +3,18 @@ import HtmlHead from '../../components/HtmlHead.astro';
 import Heading from '../../components/PageHeader.astro';
 import Footer from '../../components/Footer.astro';
 import ExhibitionPreview from '../../components/ExhibitionPreview.astro';
+import { getCollection } from 'astro:content';
 
 let title = 'Exhibitions';
 let description = '';
 let permalink = 'https://arkixd.se/exhibitions/';
 
 // Import index of for each exhibition
-let allExhibitions = await Astro.glob('./**/index.md');
+let allExhibitions = await getCollection('exhibitions');
 
 // Sort by year string
 allExhibitions = allExhibitions.sort((a, b) =>
-  b.frontmatter.year.toString().localeCompare(a.frontmatter.year)
+  b.data.year.toString().localeCompare(a.data.year.toString())
 );
 ---
 
@@ -67,7 +68,7 @@ allExhibitions = allExhibitions.sort((a, b) =>
           <p>{description}</p>
         </section>
         <section class="list" aria-label="Exhibition list">
-          {allExhibitions.map((d) => <ExhibitionPreview d={d} />)}
+          {allExhibitions.map((d) => <ExhibitionPreview exhibition={d} />)}
         </section>
       </main>
     </div>

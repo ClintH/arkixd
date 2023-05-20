@@ -1,0 +1,13 @@
+---
+import Page from '../../layouts/Page.astro';
+import ExhibitionPreview from '../../components/ExhibitionPreview.astro';
+import { sortTopProjects } from 'src/util';
+
+import { getCollection } from 'astro:content';
+
+const allEx = await getCollection('exhibitions');
+---
+
+<Page title="Exhibitions">
+  {allEx.map((ex) => <ExhibitionPreview exhibition={ex} />)}
+</Page>

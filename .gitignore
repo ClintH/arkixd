@@ -2,6 +2,7 @@
 dist/
 .output/
 public/images/
+.astro
 
 # dependencies
 node_modules/

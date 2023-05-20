@@ -2,18 +2,24 @@
 import HtmlHead from '../components/HtmlHead.astro';
 import PageHeader from '../components/PageHeader.astro';
 import Footer from '../components/Footer.astro';
-import { ProjectMetadata } from 'src/components/ProjectMetadata';
 import BackgroundImage from '../components/BackgroundImage.astro';
-export interface Props {
-  frontmatter?: ProjectMetadata;
-}
+import { CollectionEntry } from 'astro:content';
+import { getImage } from 'astro:assets';
 
-const p = Astro.props.frontmatter || Astro.props;
+const project = Astro.props.project;
+const p = project.data;
+const image = await getImage(p.image, {});
+
+const yearLevel =
+  p.yearLevel === 1 ? 'First' : p.yearLevel === 2 ? 'Second' : 'Third';
+
 const tags = p.tags
   ? `Tags: <ul class="inline">${p.tags
       .map((tag) => `<li><a href="/tags/${tag}">${tag}</a></li>`)
       .join(``)}</ul>`
   : ``;
+
+const creators = Array.isArray(p.creators) ? p.creators.join(', ') : p.creators;
 ---
 
 <html lang="en">
@@ -23,11 +29,11 @@ const tags = p.tags
 
   <body>
     <div class="bleed">
-      <BackgroundImage url={p.image}>
+      <BackgroundImage url={image.src}>
         <PageHeader />
         <div class="container">
           <div class="wrapper project">
-            <h2>{p.creators}</h2>
+            <h2>{creators}</h2>
             <h1>{p.title}</h1>
             {p.subTitle ? <h3>{p.subTitle}</h3> : ``}
           </div>
@@ -40,7 +46,7 @@ const tags = p.tags
         <div class="meta">
           <Fragment set:html={tags} />
           <p>
-            {p.year}, {p.course} ({p.yearLevel} year)
+            {p.year}, {p.course} ({yearLevel} year)
           </p>
         </div>
       </div>
