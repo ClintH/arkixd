@@ -6,7 +6,7 @@
     "dev": "astro dev --experimental-integrations --host 127.0.0.1",
     "build": "astro build --experimental-integrations",
     "preview": "astro preview --experimental-integrations",
-    "deploy": "netlify deploy --dir=dist",
+    "stage": "netlify deploy --dir=dist",
     "publish": "netlify deploy --dir=dist --prod",
     "clean": "rimraf node_modules/.cache && rimraf node_modules/.vite",
     "images": "node optimise-images.js",
