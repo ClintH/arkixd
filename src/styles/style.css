@@ -140,9 +140,15 @@ figure.imageSet>p {
 	display: contents;
 }
 
+
 .wrapper img {
 	max-inline-size: 100%;
 	block-size: auto;
+}
+
+figcaption {
+	text-align: center;
+	font-style: italic;
 }
 
 .wrapper p:has(img) {

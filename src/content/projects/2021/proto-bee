@@ -1,0 +1,45 @@
+---
+title: The Bee
+subTitle: Designing interactions with proactive ambient artefacts
+course: Thesis
+creators: Manuel Zomer
+year: 2021
+yearLevel: 3
+tags:
+  - ambient
+  - interactivity
+  - ubicomp
+image: ./zomer-0.jpg
+---
+import MauVideo from "../../../components/MauVideo.astro"
+
+The Bee is an interactive decoration that reacts to your distance from it and your presence in the room. Its' purpose is to deepen the connection between users and their plants. Visual and role prototypes were made in the workshop at Malmö University with laser-cut MDF board, glue, and spray paint. Earlier prototypes were made out of cardboard for quick prototyping and user testing, these were handmade and later laser cut.
+
+Seeing their plants grow gives the owners a sense of accomplishment. However, taking care of plants that don't grow much or that have slow-growing periods during the fall and winter can seem pointless.
+
+The concept is a playful interaction decoration that reacts to your presence and makes different nature/bee soundscapes to instil a feeling of life and nature into our living environment when different seasons and outer factors slow down plant growth. This creates a deeper connection between people and their plants by encouraging them to interact more often and even perhaps more spontaneously as they are enticed by the sounds as they walk by.
+
+One of the interactions that we have designed for our bee prototype is a distance sensor that, when you approach and move closer to the bee, the sounds it makes modulates and changes according to your distance from it.
+
+When you have approached the bee, you can then touch it. Touching activates a vibration within the bee. We tested different types of vibrations and found that users overall liked the heartbeat vibration the most since they found that it was the one most connected to oneself. It made the interaction close and intimate. The vibration is controlled and modulated by the moisture in the soil (controlled by a moisture sensor). If the soil is dry, the heartbeat gets quicker and more stressed and if the soil is sufficiently watered, the heartbeat is calm. This, too, is meant to make users come closer to their plants and interact with them more intimately, as the heartbeat becomes an abstraction of the plants' well-being.
+
+<MauVideo id="0_nrm4qbyd" />
+
+![Overview of the setup](./zomer-1.jpg)
+
+Five principles for shaping proactive interaction
+
+1. Define the artefact’s purpose and the user’s expectations. 
+2. Balance feedback both in terms of means and timeframe (frequency).
+3. Consider spatial implications in relation to utilized means of feedback.
+4. Revisit the notion of gaining versus losing 
+control.
+1. Explore the concept of annoyance as a design 
+material, and the human-artefact relationship.
+
+
+<figure class="imageSet">
+![](./zomer-2.jpg)
+![](./zomer-3.jpg)
+![](./zomer-4.jpg)
+</figure>
