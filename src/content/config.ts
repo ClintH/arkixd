@@ -1,8 +1,8 @@
-import {z, defineCollection} from 'astro:content';
+import { z, defineCollection } from 'astro:content';
 
 const projectsCollection = defineCollection({
   type: 'content',
-  schema: ({image}) => z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
     tags: z.array(z.string()),
     image: image().refine((img) => img.width >= 80, {
@@ -20,7 +20,7 @@ const projectsCollection = defineCollection({
 
 const exhibitionCollection = defineCollection({
   type: 'content',
-  schema: ({image}) => z.object({
+  schema: ({ image }) => z.object({
     year: z.number(),
     yearLevel: z.number(),
     title: z.string(),
@@ -33,7 +33,7 @@ const exhibitionCollection = defineCollection({
 
 const exhibitionContentCollection = defineCollection({
   type: 'content',
-  schema: ({image}) => z.object({
+  schema: ({ image }) => z.object({
     priority: z.number(),
     exhibition: z.string(),
     title: z.string(),
@@ -44,7 +44,8 @@ const exhibitionContentCollection = defineCollection({
     additionalImages: z.array(image()).optional(),
     creators: z.array(z.string()).or(z.string()),
     subTitle: z.string().optional(),
-    youtubeID: z.string().optional()
+    youtubeID: z.string().optional(),
+    videoMauPlay: z.string().optional()
   })
 });
 

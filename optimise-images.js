@@ -10,7 +10,7 @@ const fs = require('fs');
 
 // Trailing slashes needed
 const config = {
-  src: "./src/images/",
+  src: "./src/",
   dest: "./public/images/",
   quality: 80, /* sharp default is 80 */
   sizes: {
@@ -38,10 +38,10 @@ async function process(input) {
   const pathOffset = input.substring(config.src.length);
 
   // File name
-  const fileNameWithExt = path.basename(input,);
+  const fileNameWithExt = path.basename(input);
   const ext = path.extname(fileNameWithExt);
   const fileNameWithoutExt = fileNameWithExt.substring(0, fileNameWithExt.length - ext.length);
-
+  console.log(`Process: ${fileNameWithExt}`);
   // Destination -- full path
   const destFullPath = config.dest + pathOffset;
 
@@ -67,7 +67,7 @@ async function process(input) {
   } else {
     console.log('OPT ' + destFullSize);
     sharp(input)
-      .jpeg({mozjpeg: true, quality: config.quality})
+      .jpeg({ mozjpeg: true, quality: config.quality })
       .toFile(destFullSize);
   }
 
@@ -83,12 +83,12 @@ async function process(input) {
     if (extToUse === '.png') {
       sharp(input)
         .resize(dim)
-        .png({mozjpeg: true, quality: config.quality})
+        .png({ mozjpeg: true, quality: config.quality })
         .toFile(destCorrectedName);
     } else {
       sharp(input)
         .resize(dim)
-        .jpeg({mozjpeg: true, quality: config.quality})
+        .jpeg({ mozjpeg: true, quality: config.quality })
         .toFile(destCorrectedName);
     }
   }
@@ -98,11 +98,15 @@ async function process(input) {
   try {
     const globby = await import('globby');
 
-    const exts = 'jpg gif png webp'.split(' ');
+    const exts = 'heic jpg gif png webp'.split(' ');
+
     const patterns = exts.map(e => config.src + '**/*.' + e);
+    console.log(patterns);
 
     const paths = await globby.globby(patterns);
+    console.log(paths);
     paths.forEach(p => {
+      console.log(p);
       process(p);
     });
 

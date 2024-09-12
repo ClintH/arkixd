@@ -2,6 +2,7 @@
 import { CollectionEntry } from 'astro:content';
 import YouTube from './YouTube.astro';
 import { getImage, Image } from 'astro:assets';
+import MauVideo from './MauVideo.astro';
 
 export interface Props {
   project: CollectionEntry<'exhibition-content'>;
@@ -29,6 +30,7 @@ const additionalImages = d.additionalImages ?? [];
   </div>
   <div class="appendices">
     {d.youtubeID && <YouTube id={d.youtubeID} />}
+    {d.videoMauPlay && <MauVideo id={d.videoMauPlay} />}
     {additionalImages.map((g) => <Image alt="Project image" src={g} />)}
   </div>
   <a class="invis" href="#top">↑</a>
